@@ -1,418 +1,417 @@
 ;;
-Stand: 05.11.2020 06:38:57;;
+Stand: 30.11.2020 05:13:36;;
 ;;
 ;;
 LK;Fälle;Inzidenz
-LK Bautzen;883;294.6
-SK Berlin Neukölln;917;285.6
-SK Augsburg;841;283.6
-LK Cloppenburg;465;272.4
-SK Herne;426;272.3
-SK Duisburg;1330;266.7
-LK Rottal-Inn;315;259.3
-SK Offenbach;328;251.8
-SK Hagen;470;249.1
-SK Rosenheim;158;248.6
-LK Rosenheim;645;246.8
-SK Bremen;1397;246.1
-SK Bottrop;289;245.8
-LK Marburg-Biedenkopf;581;235.1
-SK Mülheim a.d.Ruhr;397;232.7
-SK Remscheid;259;232.6
-SK Frankfurt am Main;1757;230.2
-LK Herford;572;228.3
-SK Berlin Tempelhof-Schöneberg;753;220.3
-SK Gelsenkirchen;570;219.5
-LK Vechta;313;219.2
-LK Lindau;179;218.3
-LK Dachau;327;211.1
-LK Berchtesgadener Land;220;207.7
-LK Passau;400;207.6
-LK Traunstein;368;207.5
-LK Recklinghausen;1273;207.3
-SK Düsseldorf;1286;206.8
-SK Wuppertal;714;201.1
-SK Solingen;320;200.9
-LK Groß-Gerau;551;199.8
-LK Mühldorf a.Inn;231;199.4
-LK Günzburg;253;199.2
-SK Berlin Reinickendorf;517;199.1
-LK Mettmann;963;198.3
-LK Lichtenfels;132;197.7
-SK Krefeld;449;197.4
-LK Augsburg;500;197.3
-SK Leverkusen;322;196.7
-SK Köln;2125;195.3
-LK Aichach-Friedberg;263;195.3
-SK Dortmund;1130;192.1
-SK Heilbronn;241;190.4
-LK Ostallgäu;266;188.4
-SK Berlin Friedrichshain-Kreuzberg;531;188.3
-LK Gießen;502;185.5
-LK Erding;255;184.5
-SK Passau;97;183.7
-SK Schweinfurt;98;183.4
-LK Gütersloh;666;182.5
-LK Germersheim;235;182.2
-SK Berlin Spandau;435;182.0
-LK Hildburghausen;115;182.0
-SK Nürnberg;940;181.3
-LK Neunkirchen;238;181.1
-SK Pforzheim;227;180.2
-SK Kaufbeuren;80;180.2
-StadtRegion Aachen;1002;179.9
-LK Offenbach;638;179.3
-SK Hamm;321;178.4
-LK Kaiserslautern;188;177.4
-LK Rheinisch-Bergischer Kreis;502;177.2
-LK Donau-Ries;237;177.2
-LK Miltenberg;228;177.1
-SK Bochum;645;176.4
-LK Landsberg a.Lech;212;176.2
-LK Verden;240;175.0
-LK Unna;689;174.5
-SK Essen;1004;172.3
-SK Wiesbaden;478;171.6
-LK Dillingen a.d.Donau;165;170.9
-LK Stadtverband Saarbrücken;561;170.7
-LK Rhein-Erft-Kreis;800;170.0
-SK Delmenhorst;131;168.9
-SK Darmstadt;266;166.4
-LK Düren;440;166.3
-LK Schweinfurt;190;164.6
-SK Bielefeld;549;164.3
-SK Berlin Mitte;610;162.6
-LK Emmendingen;270;162.3
-LK Hochsauerlandkreis;421;162.1
-LK Minden-Lübbecke;502;161.7
-SK Bamberg;124;160.3
-LK Ebersberg;230;160.1
-SK Ludwigshafen;275;159.6
-SK München;2367;159.5
-SK Mannheim;494;159.0
-LK Kronach;106;158.8
-SK Mainz;346;158.3
-SK Kaiserslautern;158;158.0
-LK München;550;156.9
-LK Grafschaft Bentheim;215;156.7
-LK Kusel;110;156.7
-LK Ennepe-Ruhr-Kreis;504;155.5
-LK Darmstadt-Dieburg;462;155.1
-LK Sankt Wendel;134;154.0
-LK Fürth;181;153.6
-LK Olpe;203;151.5
-SK Ingolstadt;208;151.4
-LK Enzkreis;302;151.3
-SK Oberhausen;316;149.9
-LK Viersen;448;149.9
-LK Main-Kinzig-Kreis;630;149.8
-LK Böblingen;588;149.7
-LK Kulmbach;107;149.5
-LK Freyung-Grafenau;117;149.3
-LK Lörrach;339;148.2
-LK Märkischer Kreis;605;147.5
-SK Kassel;298;147.4
-LK Garmisch-Partenkirchen;130;147.0
-LK Rhein-Sieg-Kreis;883;147.0
-LK Rhein-Kreis Neuss;663;146.8
-LK Borken;545;146.8
-LK Oberbergischer Kreis;399;146.7
-LK Würzburg;238;146.6
-SK Fürth;188;146.3
-LK Esslingen;778;145.4
-LK Birkenfeld;117;144.5
-SK Berlin Charlottenburg-Wilmersdorf;483;144.4
-SK Landshut;106;144.4
-SK Ulm;183;144.3
-SK Karlsruhe;450;144.2
-LK Lippe;500;143.9
-LK Unterallgäu;209;143.8
-SK Regensburg;218;142.4
-LK Osnabrück;507;141.6
-LK Ludwigsburg;770;141.2
-LK Rems-Murr-Kreis;603;141.1
-LK Freising;254;141.1
-SK Weimar;92;141.0
-LK Warendorf;390;140.4
-LK Miesbach;140;140.0
-SK Mönchengladbach;365;139.8
-SK Koblenz;159;139.4
-LK Oberallgäu;217;139.1
+SK Passau;306;579.5
+LK Hildburghausen;366;579.1
+LK Bautzen;1221;407.3
+LK Erzgebirgskreis;1318;393.5
+LK Regen;292;377.2
+LK Passau;694;360.2
+LK Görlitz;888;351.4
+LK Sächsische Schweiz-Osterzgebirge;828;337.2
+SK Nürnberg;1593;307.3
+LK Zwickau;950;301.6
+LK Sonneberg;171;296.3
+SK Berlin Spandau;706;295.4
+LK Oberspreewald-Lausitz;323;295.3
+SK Solingen;469;294.5
+SK Rosenheim;177;278.5
+SK Berlin Friedrichshain-Kreuzberg;784;278.0
+LK Coburg;239;275.5
+LK Main-Spessart;347;275.1
+LK Freyung-Grafenau;215;274.4
+LK Tuttlingen;376;267.1
+SK Speyer;134;265.0
+SK Augsburg;786;265.0
+SK Hof;121;264.0
+SK Berlin Neukölln;837;260.6
+LK Altenburger Land;230;257.3
+SK Offenbach;333;255.6
+SK Berlin Tempelhof-Schöneberg;870;254.6
+SK Duisburg;1220;244.6
+LK Straubing-Bogen;243;240.3
+LK Altötting;267;239.4
+LK Haßberge;201;238.2
+SK Chemnitz;579;235.0
+LK Ostalbkreis;733;233.4
+SK Pforzheim;294;233.4
+LK Cloppenburg;393;230.3
+LK Lippe;796;229.1
+LK Mittelsachsen;689;226.6
+LK Schwarzwald-Baar-Kreis;469;220.7
+SK Berlin Mitte;828;220.7
+SK Fürth;282;219.5
+LK Mühldorf a.Inn;254;219.2
+LK Main-Kinzig-Kreis;906;215.4
+SK Weiden i.d.OPf.;92;215.2
+LK Meißen;515;213.1
+LK Rosenheim;555;212.4
+LK Landshut;337;210.8
+SK Kaufbeuren;93;209.5
+LK Recklinghausen;1286;209.4
+SK Hagen;395;209.3
+LK Offenbach;741;208.3
+LK Lörrach;475;207.7
+SK Hamm;371;206.2
+LK Hof;194;204.6
+SK Bielefeld;682;204.1
+LK Wunsiedel i.Fichtelgebirge;147;202.3
+SK Mannheim;628;202.2
+LK Saale-Orla-Kreis;162;201.7
+LK Burgenlandkreis;360;201.3
+LK Vogtlandkreis;454;200.9
+SK Heilbronn;254;200.6
+LK Wesel;922;200.4
+LK Vechta;286;200.3
+LK Sömmerda;139;200.2
+LK Rhön-Grabfeld;159;199.7
+LK Amberg-Sulzbach;205;198.9
+LK Erding;274;198.3
+LK Kronach;132;197.8
+SK Wuppertal;700;197.1
+LK Augsburg;497;196.1
+LK Neustadt a.d.Aisch-Bad Windsheim;197;195.0
+LK Eichstätt;257;193.4
+SK Herne;302;193.0
+LK Ebersberg;277;192.8
+LK Günzburg;244;192.1
+SK Dresden;1051;188.8
+LK Traunstein;331;186.7
+LK Alzey-Worms;242;186.6
+SK Berlin Reinickendorf;480;184.8
+SK Mainz;403;184.4
+LK Aichach-Friedberg;246;182.7
+LK Landsberg a.Lech;219;182.0
+SK Essen;1060;181.9
+SK München;2688;181.1
+LK Freising;324;180.0
+LK Groß-Gerau;496;179.9
+LK Siegen-Wittgenstein;496;179.1
+SK Wiesbaden;495;177.8
+LK Neu-Ulm;311;177.5
+SK Leverkusen;290;177.1
+SK Regensburg;271;177.0
+LK Gütersloh;643;176.2
+LK Neustadt a.d.Waldnaab;166;175.8
+LK Minden-Lübbecke;543;174.9
+SK Bottrop;203;172.7
+LK Dachau;267;172.4
+LK Fürstenfeldbruck;378;172.4
+LK Kusel;121;172.3
+LK Düren;456;172.3
+LK Heinsberg;438;171.4
+SK Stuttgart;1085;170.6
+SK Berlin Lichtenberg;487;170.0
+SK Berlin Charlottenburg-Wilmersdorf;568;169.9
+LK Spree-Neiße;193;169.7
+LK Rottal-Inn;206;169.5
+LK Reutlingen;484;168.6
+SK Mönchengladbach;440;168.6
+LK Dillingen a.d.Donau;162;167.8
+SK Dortmund;986;167.6
+LK Leipzig;432;167.4
+LK Deggendorf;199;166.6
+LK Schwandorf;245;165.7
+SK Ulm;209;164.8
+LK Rheingau-Taunus-Kreis;308;164.6
+SK Frankfurt am Main;1255;164.4
+LK Osnabrück;585;163.4
+LK Greiz;159;163.2
+LK Nordsachsen;321;162.3
+LK Bad Kreuznach;257;162.3
+LK Fürth;190;161.2
+LK Schmalkalden-Meiningen;201;160.9
+SK Gelsenkirchen;415;159.8
+SK Remscheid;177;159.0
+SK Kempten;109;157.6
+LK Limburg-Weilburg;270;157.1
+LK Märkischer Kreis;644;157.0
+SK Straubing;75;156.9
+LK Miltenberg;202;156.9
+SK Landshut;115;156.7
+LK Dingolfing-Landau;151;156.2
+LK Rems-Murr-Kreis;665;155.6
+LK Oberallgäu;242;155.1
+LK Stadtverband Saarbrücken;509;154.8
+LK Schwalm-Eder-Kreis;278;154.7
+LK Euskirchen;299;154.4
+SK Amberg;65;154.0
+SK Berlin Marzahn-Hellersdorf;404;153.6
+LK Forchheim;178;153.2
+LK Eichsfeld;153;153.0
+LK Kaiserslautern;162;152.9
+LK Werra-Meißner-Kreis;153;152.0
+SK Berlin Steglitz-Zehlendorf;459;151.9
+SK Osnabrück;251;151.9
+SK Coburg;62;151.0
+LK Esslingen;807;150.8
+LK Cham;193;150.8
+LK Calw;240;150.8
+LK Oberbergischer Kreis;410;150.7
+LK Saalekreis;277;150.7
+LK München;526;150.1
+SK Koblenz;171;149.9
+LK Enzkreis;299;149.8
+SK Worms;125;149.6
+SK Krefeld;340;149.5
+LK Pfaffenhofen a.d.Ilm;191;149.0
+LK Germersheim;192;148.8
+LK Regensburg;288;148.4
+LK Rhein-Pfalz-Kreis;229;148.1
+SK Oberhausen;311;147.6
+LK Kyffhäuserkreis;109;146.9
+LK Unna;578;146.4
+LK Bad Tölz-Wolfratshausen;187;146.2
+LK Rheinisch-Bergischer Kreis;412;145.4
+LK Nürnberger Land;248;145.2
+LK Marburg-Biedenkopf;358;144.9
+LK Miesbach;144;144.0
+SK Berlin Pankow;573;144.0
+LK Rottweil;201;143.7
+LK Havelland;234;143.6
+SK Ludwigshafen;245;142.2
+LK Saar-Pfalz-Kreis;202;142.1
+LK Aschaffenburg;247;141.8
+SK Gera;132;141.7
+LK Saalfeld-Rudolstadt;146;141.5
+SK Dessau-Roßlau;112;139.8
+SK Darmstadt;223;139.5
 SK Schwabach;57;139.1
-LK Cham;178;139.1
-LK Diepholz;301;138.7
-LK Regen;107;138.2
-LK Fürstenfeldbruck;302;137.7
-LK Odenwaldkreis;133;137.5
-LK Tübingen;314;137.3
-SK Stuttgart;872;137.1
-LK Bamberg;201;136.6
-LK Alb-Donau-Kreis;269;136.5
-LK Altötting;152;136.3
-LK Neuburg-Schrobenhausen;132;135.7
-LK Heilbronn;467;135.6
-LK Euskirchen;261;134.8
-LK Weilheim-Schongau;179;132.1
-LK Karlsruhe;585;131.4
-LK Main-Taunus-Kreis;312;130.8
-LK Lahn-Dill-Kreis;325;128.3
-LK Saarlouis;249;128.1
-LK Kleve;400;128.0
-LK Limburg-Weilburg;220;128.0
-LK Waldeck-Frankenberg;200;127.9
-LK Bernkastel-Wittlich;143;127.1
-SK Memmingen;56;127.0
-LK Mittelsachsen;385;126.6
-LK Pfaffenhofen a.d.Ilm;162;126.3
-LK Heinsberg;321;125.6
-LK Ahrweiler;163;125.3
-SK Bonn;413;125.3
-LK Ortenaukreis;539;125.1
-LK Elbe-Elster;127;124.7
-SK Berlin Lichtenberg;357;124.6
-LK Neu-Ulm;215;122.7
-LK Steinfurt;545;121.6
-SK Straubing;58;121.4
-SK Berlin Steglitz-Zehlendorf;366;121.1
-LK Waldshut;206;120.5
-LK Rhein-Neckar-Kreis;659;120.2
-SK Würzburg;153;119.6
-SK Weiden i.d.OPf.;51;119.3
-LK Rheingau-Taunus-Kreis;223;119.1
-SK Freiburg i.Breisgau;275;118.9
-SK Speyer;60;118.7
-LK Erzgebirgskreis;396;118.2
-LK Saar-Pfalz-Kreis;168;118.1
-LK Rhön-Grabfeld;94;118.0
-LK Mainz-Bingen;248;117.3
-LK Wesel;539;117.2
-LK Bitburg-Prüm;116;117.1
-LK Starnberg;160;117.1
-LK Neuwied;214;117.1
-LK Heidenheim;155;116.7
-LK Leipzig;299;115.8
-LK Landshut;185;115.7
-LK Deggendorf;138;115.5
-LK Göppingen;298;115.4
-SK Berlin Pankow;459;115.3
-LK Cochem-Zell;70;114.1
-LK Kitzingen;103;113.0
-LK Wetteraukreis;348;112.9
-LK Weißenburg-Gunzenhausen;106;111.9
-LK Calw;177;111.2
-LK Reutlingen;318;110.8
-LK Nordsachsen;219;110.8
-LK Hohenlohekreis;124;110.1
-Region Hannover;1271;109.8
-LK Höxter;154;109.8
-LK Meißen;265;109.6
-SK Frankenthal;53;108.7
-SK Berlin Marzahn-Hellersdorf;284;108.0
-LK Trier-Saarburg;161;107.8
-LK Zollernalbkreis;204;107.7
-SK Osnabrück;178;107.7
-SK Salzgitter;112;107.4
-LK Rhein-Hunsrück-Kreis;110;106.6
-SK Gera;99;106.3
-LK Schwäbisch Hall;209;106.2
-LK Regensburg;205;105.6
-LK Breisgau-Hochschwarzwald;278;105.5
-LK Konstanz;300;104.8
-LK Bad Tölz-Wolfratshausen;134;104.8
-SK Münster;330;104.7
-SK Heidelberg;169;104.7
-SK Chemnitz;257;104.3
-LK Hochtaunuskreis;246;103.8
-LK Zwickau;326;103.5
-LK Eichstätt;137;103.1
-LK Roth;130;102.6
-SK Oldenburg;173;102.3
-LK Hof;97;102.3
-LK Schwarzwald-Baar-Kreis;217;102.1
-LK Altenburger Land;91;101.8
-LK Merzig-Wadern;105;101.7
-SK Bayreuth;76;101.6
-LK Südwestpfalz;96;101.2
-LK Coesfeld;223;101.1
-LK Weimarer Land;83;101.0
-LK Alzey-Worms;131;101.0
-LK Siegen-Wittgenstein;278;100.4
-SK Hamburg;1844;99.8
-LK Hameln-Pyrmont;148;99.6
-LK Vogtlandkreis;225;99.6
-LK Westerwaldkreis;201;99.6
-LK Coburg;86;99.1
-SK Erfurt;212;99.1
-LK Straubing-Bogen;99;97.9
-LK Forchheim;113;97.2
-LK Dingolfing-Landau;94;97.2
-SK Erlangen;108;96.0
-LK Nordfriesland;159;95.8
-SK Ansbach;40;95.7
-LK Oberspreewald-Lausitz;104;95.1
-SK Trier;106;95.0
-LK Tirschenreuth;68;94.4
-LK Kelheim;116;94.3
-LK Kassel;223;94.2
-SK Dresden;522;93.8
-LK Emsland;305;93.3
-LK Neumarkt i.d.OPf.;125;92.9
-SK Berlin Treptow-Köpenick;247;92.7
-LK Schaumburg;146;92.5
-LK Bergstraße;250;92.5
-LK Paderborn;280;91.0
-LK Fulda;202;90.5
-SK Coburg;37;90.1
-LK Neustadt a.d.Waldnaab;85;90.0
-LK Aschaffenburg;156;89.6
-LK Oldenburg;117;89.4
-LK Rottweil;125;89.4
-LK Eichsfeld;88;88.0
-LK Bayreuth;91;87.8
-LK Donnersbergkreis;66;87.6
-LK Tuttlingen;123;87.4
-LK Rastatt;202;87.3
-LK Mayen-Koblenz;187;87.2
-LK Neustadt a.d.Aisch-Bad Windsheim;88;87.1
-SK Magdeburg;206;86.7
-LK Schwandorf;128;86.6
-LK Südliche Weinstraße;95;86.0
-LK Hildesheim;237;85.9
-SK Aschaffenburg;61;85.9
-LK Pinneberg;268;84.8
-LK Altenkirchen;109;84.6
+LK Odenwaldkreis;134;138.6
+SK Bochum;506;138.4
+LK Göppingen;357;138.3
+LK Kelheim;170;138.1
+SK Bonn;455;138.0
+LK Erlangen-Höchstadt;189;137.7
+LK Lahn-Dill-Kreis;347;137.0
+LK Rhein-Sieg-Kreis;821;136.7
+LK Mettmann;661;136.1
+SK Köln;1471;135.2
+LK Gießen;366;135.2
+LK Main-Tauber-Kreis;179;135.2
+LK Tirschenreuth;97;134.6
+LK Neuburg-Schrobenhausen;131;134.6
+LK Ilm-Kreis;143;134.6
+LK Rhein-Erft-Kreis;632;134.3
+LK Darmstadt-Dieburg;399;134.0
+LK Warendorf;372;133.9
+LK Neumarkt i.d.OPf.;180;133.8
+LK Höxter;187;133.3
+LK Elbe-Elster;135;132.6
+LK Lichtenfels;88;131.8
+LK Berchtesgadener Land;139;131.2
+SK Ingolstadt;178;129.6
+LK Fulda;289;129.5
+LK Donau-Ries;173;129.3
+SK Memmingen;57;129.3
+LK Wetteraukreis;396;128.4
+LK Waldshut;219;128.1
+SK Erlangen;144;128.0
+LK Südliche Weinstraße;141;127.6
+LK Mainz-Bingen;269;127.2
+LK Karlsruhe;566;127.2
+SK Frankenthal;62;127.1
+SK Kassel;257;127.1
+LK Neckar-Odenwald-Kreis;182;126.7
+LK Rhein-Neckar-Kreis;694;126.6
+LK Viersen;378;126.5
+LK Herford;316;126.1
+LK Rastatt;291;125.7
+LK Garmisch-Partenkirchen;111;125.5
+SK Schweinfurt;67;125.4
+LK Ortenaukreis;538;124.8
+LK Donnersbergkreis;93;123.5
+LK Ennepe-Ruhr-Kreis;400;123.4
+LK Unstrut-Hainich-Kreis;126;123.2
+LK Bodenseekreis;266;122.3
+LK Ahrweiler;156;119.9
+LK Barnim;219;118.2
+SK Cottbus;117;117.4
+SK Düsseldorf;728;117.1
+LK Kassel;275;116.1
+LK Wesermarsch;102;115.1
+LK Peine;155;115.0
+LK Neuwied;210;114.9
+SK Berlin Treptow-Köpenick;305;114.5
+LK Schweinfurt;132;114.3
+LK Salzlandkreis;216;114.2
+SK Mülheim a.d.Ruhr;191;111.9
+SK Aschaffenburg;79;111.3
+SK Kaiserslautern;111;111.0
+LK Cochem-Zell;68;110.8
+LK Heidenheim;147;110.7
+SK Baden-Baden;61;110.5
+LK Main-Taunus-Kreis;260;109.0
+SK Salzgitter;113;108.4
+LK Heilbronn;372;108.0
+LK Südwestpfalz;102;107.6
+LK Bad Kissingen;111;107.5
+LK Ludwigsburg;586;107.4
+LK Hohenlohekreis;121;107.4
+SK Bamberg;83;107.3
+LK Rhein-Kreis Neuss;484;107.1
+SK Heidelberg;172;106.5
+LK Kitzingen;97;106.4
+SK Leipzig;628;105.9
+LK Freudenstadt;125;105.7
+LK Hochtaunuskreis;250;105.5
+LK Borken;390;105.0
+LK Hildesheim;289;104.8
+LK Ostallgäu;147;104.1
+LK Mansfeld-Südharz;140;103.7
+SK Suhl;38;103.3
+LK Nienburg (Weser);125;103.0
+LK Birkenfeld;83;102.5
+LK Weilheim-Schongau;138;101.9
+SK Delmenhorst;79;101.9
+LK Uckermark;121;101.7
+SK Neustadt a.d.Weinstraße;54;101.4
+SK Wolfsburg;126;101.3
+LK Bamberg;148;100.6
+LK Alb-Donau-Kreis;198;100.5
+LK Roth;127;100.2
+LK Böblingen;393;100.0
+LK Unterallgäu;145;99.8
+LK Oder-Spree;178;99.6
+LK Vogelsbergkreis;105;99.4
+LK Ansbach;183;99.1
+LK Paderborn;305;99.1
+LK Friesland;97;98.3
+SK Bremen;557;98.1
+LK Starnberg;133;97.3
+SK Jena;108;97.0
+LK Hersfeld-Rotenburg;116;96.1
+LK Wittenberg;120;96.0
+SK Frankfurt (Oder);55;95.2
+LK Rhein-Lahn-Kreis;116;94.9
+LK Bergstraße;256;94.7
+LK Rhein-Hunsrück-Kreis;97;94.0
+LK Lindau;77;93.9
+LK Kleve;291;93.1
+LK Diepholz;202;93.0
+LK Weißenburg-Gunzenhausen;88;92.9
+LK Saale-Holzland-Kreis;77;92.8
+LK Pinneberg;293;92.7
+LK Emmendingen;153;91.9
+LK Börde;156;91.3
+SK Freiburg i.Breisgau;211;91.3
+SK Zweibrücken;31;90.7
+LK Saarlouis;176;90.6
+LK Wartburgkreis;107;89.9
+LK Kulmbach;64;89.4
+LK Bad Dürkheim;118;88.9
+LK Biberach;179;88.9
+SK Karlsruhe;277;88.8
+LK Sankt Wendel;77;88.5
+LK Steinfurt;396;88.3
+LK Grafschaft Bentheim;121;88.2
+LK Zollernalbkreis;164;86.6
+LK Emsland;282;86.3
+Region Hannover;997;86.2
+LK Wittmund;49;86.1
+LK Celle;153;85.5
+LK Verden;117;85.3
+LK Ravensburg;243;85.1
+LK Mayen-Koblenz;182;84.9
+LK Bitburg-Prüm;84;84.8
 SK Pirmasens;34;84.5
-LK Schwalm-Eder-Kreis;151;84.0
-LK Kyffhäuserkreis;62;83.5
-SK Amberg;35;82.9
-SK Hof;38;82.9
-LK Bad Kreuznach;131;82.7
-SK Neustadt a.d.Weinstraße;44;82.6
-LK Vorpommern-Rügen;185;82.3
-LK Sonneberg;47;81.4
-LK Freudenstadt;96;81.2
-SK Kempten;56;81.0
-LK Greiz;78;80.1
-LK Biberach;161;80.0
-LK Saale-Holzland-Kreis;66;79.6
-LK Neckar-Odenwald-Kreis;114;79.4
-SK Worms;66;79.0
-LK Sigmaringen;103;78.7
-LK Peine;106;78.6
-LK Bad Dürkheim;103;77.6
-LK Bodenseekreis;168;77.3
-LK Osterholz;88;77.2
-LK Lüchow-Dannenberg;37;76.4
-LK Sächsische Schweiz-Osterzgebirge;187;76.1
-LK Barnim;139;75.0
-LK Ostalbkreis;235;74.8
-LK Hersfeld-Rotenburg;90;74.6
-SK Frankfurt (Oder);43;74.5
-LK Schmalkalden-Meiningen;93;74.5
-LK Werra-Meißner-Kreis;74;73.5
-LK Salzlandkreis;139;73.5
-LK Amberg-Sulzbach;75;72.8
-SK Landau i.d.Pfalz;34;72.5
-LK Main-Spessart;91;72.1
-LK Rhein-Lahn-Kreis;88;72.0
-LK Rhein-Pfalz-Kreis;111;71.8
-SK Bremerhaven;81;71.3
-LK Lüneburg;130;70.6
-LK Jerichower Land;63;70.3
-LK Wittmund;40;70.3
-SK Lübeck;151;69.7
-LK Wolfenbüttel;83;69.4
-LK Segeberg;192;69.3
-LK Vulkaneifel;42;69.3
-LK Erlangen-Höchstadt;95;69.2
-SK Schwerin;66;69.0
-LK Soest;207;68.6
-LK Nürnberger Land;117;68.5
-LK Ostprignitz-Ruppin;67;67.8
-LK Wunsiedel i.Fichtelgebirge;49;67.4
-LK Heidekreis;94;66.8
-LK Stormarn;162;66.4
-SK Cottbus;66;66.2
-LK Vorpommern-Greifswald;155;65.8
-SK Baden-Baden;36;65.2
-LK Göttingen;205;62.9
-LK Märkisch-Oderland;122;62.3
-SK Emden;31;62.1
-LK Cuxhaven;122;61.6
-LK Vogelsbergkreis;65;61.5
-LK Harburg;154;60.5
-LK Burgenlandkreis;108;60.4
-LK Main-Tauber-Kreis;79;59.7
-LK Spree-Neiße;67;58.9
-LK Oder-Spree;104;58.2
-LK Bad Kissingen;60;58.1
-LK Rotenburg (Wümme);95;58.0
-LK Unstrut-Hainich-Kreis;59;57.7
-LK Ravensburg;164;57.5
-LK Ansbach;104;56.3
-SK Halle;134;56.1
-SK Braunschweig;139;55.7
-SK Jena;62;55.7
-LK Aurich;103;54.3
-LK Haßberge;45;53.3
-LK Ammerland;66;52.9
-LK Oberhavel;112;52.6
-LK Herzogtum Lauenburg;104;52.5
+SK Brandenburg a.d.Havel;61;84.5
+LK Merzig-Wadern;87;84.3
+LK Hochsauerlandkreis;218;83.9
+SK Würzburg;107;83.6
+LK Tübingen;189;82.6
+LK Potsdam-Mittelmark;178;82.2
+SK Potsdam;148;82.1
+LK Waldeck-Frankenberg;127;81.2
+LK Trier-Saarburg;121;81.0
+LK Jerichower Land;72;80.4
+SK Hamburg;1471;79.6
+SK Erfurt;169;79.0
+LK Vorpommern-Greifswald;186;78.9
+LK Konstanz;225;78.6
+LK Heidekreis;110;78.2
+LK Coesfeld;172;78.0
+LK Weimarer Land;64;77.9
+LK Teltow-Fläming;130;76.5
+LK Harz;163;76.4
+LK Hameln-Pyrmont;113;76.1
+LK Olpe;101;75.4
+LK Gotha;101;74.9
+LK Mecklenburgische Seenplatte;193;74.8
+SK Kiel;180;72.9
+LK Nordhausen;60;71.9
+SK Ansbach;30;71.8
+LK Schaumburg;113;71.6
+LK Vulkaneifel;43;70.9
+SK Halle;167;69.9
+LK Schwäbisch Hall;137;69.6
+LK Oberhavel;148;69.5
+LK Rotenburg (Wümme);113;69.0
+SK Weimar;45;69.0
+LK Westerwaldkreis;139;68.8
+SK Oldenburg;115;68.0
+LK Stade;138;67.5
+LK Ammerland;84;67.3
+LK Würzburg;109;67.2
+LK Soest;202;66.9
+SK Bremerhaven;76;66.9
+LK Breisgau-Hochschwarzwald;175;66.4
+LK Altmarkkreis Salzwedel;54;64.9
+LK Sigmaringen;84;64.2
+SK Eisenach;27;63.9
+LK Bayreuth;66;63.7
+SK Magdeburg;150;63.1
+LK Stendal;70;63.0
+StadtRegion Aachen;349;62.7
+LK Anhalt-Bitterfeld;98;61.8
+LK Nordwestmecklenburg;97;61.7
+LK Segeberg;169;61.0
+LK Herzogtum Lauenburg;118;59.6
+LK Wolfenbüttel;71;59.4
+LK Stormarn;143;58.6
+SK Emden;29;58.1
+SK Landau i.d.Pfalz;27;57.6
+LK Lüneburg;106;57.6
+SK Trier;64;57.4
+LK Ludwigslust-Parchim;117;55.2
+LK Märkisch-Oderland;108;55.2
+LK Harburg;140;55.0
+LK Altenkirchen;70;54.3
+SK Braunschweig;135;54.1
+LK Lüchow-Dannenberg;26;53.7
+SK Münster;169;53.6
+LK Osterholz;61;53.5
+LK Northeim;70;52.9
+LK Bernkastel-Wittlich;59;52.5
 SK Neumünster;42;52.4
-LK Celle;93;52.0
-LK Potsdam-Mittelmark;110;50.8
-LK Wittenberg;63;50.4
-LK Ilm-Kreis;53;49.9
-LK Stendal;54;48.6
-SK Leipzig;288;48.6
-SK Potsdam;87;48.2
-SK Wolfsburg;60;48.2
-LK Altmarkkreis Salzwedel;40;48.1
-LK Goslar;64;47.0
-LK Nienburg (Weser);57;47.0
-LK Nordhausen;39;46.8
-LK Ludwigslust-Parchim;99;46.7
-LK Nordwestmecklenburg;73;46.4
-LK Anhalt-Bitterfeld;73;46.1
-SK Kiel;113;45.8
-LK Wesermarsch;40;45.2
-LK Uckermark;53;44.6
-SK Zweibrücken;15;43.9
-LK Sömmerda;30;43.2
-LK Saalekreis;78;42.4
-LK Havelland;68;41.7
-LK Saalfeld-Rudolstadt;43;41.7
-LK Gifhorn;73;41.4
-LK Stade;83;40.6
-LK Rendsburg-Eckernförde;111;40.5
-LK Helmstedt;36;39.4
-LK Dithmarschen;52;39.0
-LK Saale-Orla-Kreis;31;38.6
-LK Harz;82;38.4
-LK Leer;64;37.5
-LK Prignitz;28;36.8
-SK Flensburg;33;36.6
-SK Suhl;13;35.3
-LK Schleswig-Flensburg;71;35.3
-SK Brandenburg a.d.Havel;25;34.6
-LK Ostholstein;69;34.4
-LK Rostock;74;34.3
-LK Uelzen;31;33.6
-LK Börde;54;31.6
-LK Teltow-Fläming;52;30.6
-LK Holzminden;20;28.4
-LK Friesland;28;28.4
-LK Northeim;36;27.2
-LK Mansfeld-Südharz;36;26.7
-SK Eisenach;11;26.0
-LK Mecklenburgische Seenplatte;63;24.4
-SK Wilhelmshaven;18;23.7
-LK Gotha;31;23.0
-SK Rostock;47;22.5
-LK Dahme-Spreewald;38;22.2
-LK Plön;24;18.7
-LK Wartburgkreis;22;18.5
-LK Steinburg;24;18.3
-SK Dessau-Roßlau;14;17.5
-LK Görlitz;36;14.2
+SK Wilhelmshaven;38;49.9
+LK Oldenburg;63;48.1
+LK Aurich;89;46.9
+SK Bayreuth;35;46.8
+LK Ostprignitz-Ruppin;45;45.5
+LK Holzminden;32;45.4
+LK Gifhorn;79;44.8
+LK Cuxhaven;87;43.9
+LK Leer;75;43.9
+SK Lübeck;94;43.4
+LK Göttingen;123;37.7
+LK Helmstedt;33;36.1
+LK Neunkirchen;46;35.0
+LK Prignitz;26;34.1
+LK Dithmarschen;45;33.8
+SK Rostock;60;28.7
+SK Schwerin;27;28.2
+LK Rendsburg-Eckernförde;74;27.0
+LK Uelzen;24;26.0
+LK Ostholstein;50;24.9
+LK Steinburg;31;23.7
+LK Rostock;48;22.2
+LK Goslar;30;22.0
+LK Plön;25;19.4
+SK Flensburg;16;17.7
+LK Nordfriesland;29;17.5
+LK Vorpommern-Rügen;29;12.9
+LK Schleswig-Flensburg;21;10.4
 ;;
