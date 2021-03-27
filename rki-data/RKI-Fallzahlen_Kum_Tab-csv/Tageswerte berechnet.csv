@@ -1,25 +1,25 @@
 
-Stand: 30.11.2020 05:36:56;;;;
+Stand: 15.12.2020 06:58:21;;;;
 
 
 Bundesland;Fälle in den letzten 7 Tagen;7-Tage-Inzidenz;;
-Baden-Württemberg;14723;132.6;;
-Bayern;22983;175.1;;
-Berlin;7301;199.0;;
-Brandenburg;2419;95.9;;
-Bremen;633;92.9;;
-Hamburg;1471;79.6;;
-Hessen;9393;149.4;;
-Mecklenburg-Vorpommern;757;47.1;;
-Niedersachsen;6619;82.8;;
-Nordrhein-Westfalen;26479;147.5;;
-Rheinland-Pfalz;4815;117.6;;
-Saarland;1097;111.2;;
-Sachsen;9874;242.5;;
-Sachsen-Anhalt;2155;98.2;;
-Schleswig-Holstein;1330;45.8;;
-Thüringen;3033;142.2;;
-Gesamt;115082;138.4;;
+Baden-Württemberg;21156;190.58783;;
+Bayern;25273;192.560049;;
+Berlin;6748;183.894715;;
+Brandenburg;3822;151.552822;;
+Bremen;887;130.211009;;
+Hamburg;2370;128.298614;;
+Hessen;11546;183.617257;;
+Mecklenburg-Vorpommern;1466;91.161331;;
+Niedersachsen;7259;90.810057;;
+Nordrhein-Westfalen;30832;171.792613;;
+Rheinland-Pfalz;6822;166.638047;;
+Saarland;1853;187.762125;;
+Sachsen;13383;328.661476;;
+Sachsen-Anhalt;3338;152.087998;;
+Schleswig-Holstein;2376;81.824578;;
+Thüringen;5354;250.963495;;
+Gesamt;144485;173.729366;;
 
 
 
@@ -28,7 +28,7 @@ Gesamt;115082;138.4;;
 
 
 Berichtsdatum;Fälle gesamt;;;Todesfälle
-30.11.2020;1053869;;;16248
+15.12.2020;1351510;;;22475
 
 
 
