@@ -56,7 +56,7 @@ export NOW=`/usr/bin/date "+%Y-%m-%d--%H-%M-%S"`
 
 for f in ./rki-data/*${NOW}.xlsx ; do
     echo "downloaded xlsx file ${f}"
-    /usr/bin/xlsx2csv --all --delimiter ";" ${f} ${f}.csv
+    /usr/bin/xlsx2csv --all --delimiter ";" --dateformat %Y-%m-%d ${f} ${f}.csv
 done
 
 

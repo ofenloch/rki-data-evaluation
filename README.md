@@ -22,10 +22,10 @@ ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation/rki-data$
 
 The data in the Excel files is extracted into CSV file by
 
-    xlsx2csv --all --delimiter ";" FileName.xlsx FileName-csv
+    xlsx2csv --all --delimiter ";" --dateformat %Y-%m-%d FileName.xlsx FileName-csv
 
 ```bash
-ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation/rki-data$ for f in *.xlsx ; do xlsx2csv --all --delimiter ";" ${f} $(basename ${f} .xlsx)-csv ; done 
+ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation/rki-data$ for f in *.xlsx ; do xlsx2csv --all --delimiter ";" --dateformat %Y-%m-%d ${f} $(basename ${f} .xlsx)-csv ; done 
 ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation/rki-data$ git status
 On branch master
 Changes not staged for commit:
