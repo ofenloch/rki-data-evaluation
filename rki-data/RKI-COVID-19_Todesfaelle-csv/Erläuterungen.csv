@@ -5,9 +5,9 @@ Dabei stellt sich manchmal heraus, dass Angaben fehlerhaft waren.
 Diese werden dann entsprechend korrigiert.
 ""
 Hinweis: 
-Die Anzahl der verstorbenen COVID-19-Fälle werden nach einer Sicherheitsfrist
+Die Anzahl der verstorbenen COVID-19 Fälle werden nach einer Sicherheitsfrist
 von knapp 3 Wochen veröffentlicht, um die relative Vollständigkeit der Daten zu gewährleisten.
-Dennoch ist für die letzten dargestellten Wochen noch mit Nachmeldungen zu rechnen. Die Zahl der verstorbenen COVID-19-Fälle ist noch nicht für Meldeverzug korrigiert. 
+Dennoch ist für die letzten dargestellten Wochen noch mit Nachmeldungen zu rechnen. Die Zahl der verstorbenen COVID-19 Fälle ist noch nicht für Meldeverzug korrigiert. 
 Diese Anzahlen werden auch in einer Sonderauswertung des Statistischen Bundesamtes dargestellt, siehe hierzu
 https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Sterbefaelle-Lebenserwartung/sterbefallzahlen.html
 ""
@@ -15,5 +15,5 @@ Die Nutzung dieser Daten ist lizenziert unter einer Creative Commons Namensnennu
 Siehe dazu https://creativecommons.org/licenses/by/4.0/deed.de
 ""
 Vorgeschlagene Zitierweise:
-Robert Koch-Institut, COVID-19-Todesfälle nach Sterbedatum, 
-Datenstand 12.2.2021, URL: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Projekte_RKI/COVID-19_Todesfaelle.html
+Robert Koch-Institut, COVID-19_Todesfälle nach Sterbedatum,
+    Datenstand: 19.02.2021, URL: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Projekte_RKI/COVID-19_Todesfaelle.html
