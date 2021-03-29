@@ -55,7 +55,7 @@ set format x "%d.%m" # "06.08"
 #set xrange ['Sa, 1. August 2020':'Sa, 10. Oktober 2020']
 # set xrange ['"Sat, 1. August 2020"':]
 
-datafile = 'plot-data.csv'
+datafile = 'data-cases.csv'
 
 # Define a function to calculate average over previous 3 points ($0 is the record index)
 samples3(x) = $0 > 2 ? 3 : ($0+1)

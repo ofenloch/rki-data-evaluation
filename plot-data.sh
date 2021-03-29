@@ -3,7 +3,7 @@
 #
 # use sed to format the data file
 #
-sed -f ./sed-command ./rki-data/RKI-Fallzahlen_Kum_Tab-csv/Fälle-Todesfälle-gesamt.csv > ./plot-data.csv
+sed -f ./sed-command ./rki-data/RKI-Fallzahlen_Kum_Tab-csv/Fälle-Todesfälle-gesamt.csv > ./data-cases.csv
 
 #
 # use gnuplot to plot some graphs
