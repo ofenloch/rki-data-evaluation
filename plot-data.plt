@@ -103,7 +103,16 @@ plot avg7_sum = init7(0) \
 
 
 
+datafile = 'data-nowcasting.csv'
 
+set title "R (4 Days)"
+set output "./graph_r_4_days.png"
+plot avg7_sum = init7(0) \
+     datafile using 1:8 title "4 day R" ,\
+     datafile using 1:(avg7($8)) title "7 day avg" with lines lt 7 lw 2
 
-
-
+set title "R (7 Days)"
+set output "./graph_r_7_days.png"
+plot avg7_sum = init7(0) \
+     datafile using 1:11 title "7 day R" ,\
+     datafile using 1:(avg7($11)) title "7 day avg" with lines lt 7 lw 2
