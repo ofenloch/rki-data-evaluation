@@ -16,8 +16,8 @@ function weekof()
     local week=${1} year=${2}
     local week_num_of_Jan_1 week_day_of_Jan_1
     local first_Mon
-    local date_fmt="+%a %b %d %Y" // something like "So Apr 04 2021"
-    local date_fmt="+%Y-%m-%d" // something like "2021-08-29"
+    local date_fmt="+%a %b %d %Y" # something like "So Apr 04 2021"
+    local date_fmt="+%Y-%m-%d" # something like "2021-08-29"
     local mon sun
 
     week_num_of_Jan_1=$(/usr/bin/date -d ${year}-01-01 +%W)
