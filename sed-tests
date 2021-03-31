@@ -1,0 +1,14 @@
+###
+### see 
+### https://linuxhint.com/50_sed_command_examples
+### for useful examples
+###
+
+# comment lines 1 to 2:
+1,2 s/^/# /
+
+# replace "#N/A" by "-1.0"
+s|#N/A|-1.0|g
+
+# replace "Summe;" by "01/2023;"
+s|Summe;|01/2023;|g
