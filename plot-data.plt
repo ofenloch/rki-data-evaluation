@@ -115,3 +115,9 @@ set title "R (7 Days)"
 plot avg7_sum = init7(0) \
      datafile using 1:11 title "7 day R" ,\
      datafile using 1:(avg7($11)) title "7 day avg" with lines lt 7 lw 2
+
+
+set output "./graph_tests.png"
+set title "PCR Tests"
+plot './data-tests.csv' using 2:4 title "Total Nr of Tests" with lines, \
+     './data-tests.csv' using 2:5 title "Nr of Positive Tests" with lines
