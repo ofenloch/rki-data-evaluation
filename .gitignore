@@ -1,2 +1,4 @@
 *.png
 data-tests.csv.tmp
+rki-data/wget-rki.log
+getRKIData.sh.cron.log
