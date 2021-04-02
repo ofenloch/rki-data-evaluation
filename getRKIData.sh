@@ -47,7 +47,7 @@ echo "THIS_PARENT_DIR ${THIS_PARENT_DIR}"
 echo "RKI_DATA_DIR    ${RKI_DATA_DIR}"
 echo "NOW             ${NOW}"
 
-# Damit stellen wir sicher, dass das Verzeinis auch wirklich exisistiert:
+# Damit stellen wir sicher, dass das Verzeichnis auch wirklich existiert:
 /usr/bin/mkdir -p ${RKI_DATA_DIR}
 
 # Excel-Datei mit den kumulierten Fallzahlen:
@@ -65,15 +65,22 @@ echo "NOW             ${NOW}"
 # Excel-Datei mit Altersverteilung
 /usr/bin/wget 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Altersverteilung.xlsx;jsessionid=BBA0E867314E7133E733D3E5D3459A48.internet082?__blob=publicationFile' --append-output ${RKI_DATA_DIR}/wget-rki.log --output-document ${RKI_DATA_DIR}/RKI-Altersverteilung.xlsx
 
-git commit ${RKI_DATA_DIR}/*.xlsx -m"${0}: add data automatically downloaded at ${NOW}"
+cd ${THIS_DIR}
+
+/usr/bin/git commit ${RKI_DATA_DIR}/*.xlsx -m"${0}: add data automatically downloaded at ${NOW}"
 
 for f in ${RKI_DATA_DIR}/RKI*.xlsx ; do
     echo "extracting csv files from downloaded xlsx file ${f}"
     /usr/bin/xlsx2csv --all --delimiter ";" --dateformat %Y-%m-%d ${f} ${RKI_DATA_DIR}/$(/usr/bin/basename ${f} .xlsx)-csv
 done
 
-git status -u
+/usr/bin/git status -u
 
+
+export THEN=$(/usr/bin/date "+%Y-%m-%d--%H-%M-%S")
+
+echo "Script Start ${NOW}"
+echo "Script End   ${THEN}"
 
 # curl 'https://services7.arcgis.com/mOBPykOjAyBO2ZKk/arcgis/rest/services/Covid19_RKI_Sums/FeatureServer/0/query?f=json&where=(Meldedatum%3Etimestamp%20%272020-03-01%2022%3A59%3A59%27%20AND%20Meldedatum%20NOT%20BETWEEN%20timestamp%20%272020-11-09%2023%3A00%3A00%27%20AND%20timestamp%20%272020-11-10%2022%3A59%3A59%27)%20AND%20(IdLandkreis%3D%2708111%27)&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=ObjectId%2CSummeFall%2CMeldedatum&orderByFields=Meldedatum%20asc&resultOffset=0&resultRecordCount=32000&resultType=standard&cacheHint=true' \
 #   -H 'authority: services7.arcgis.com' \
