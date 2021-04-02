@@ -29,35 +29,50 @@
 # https://survstat.rki.de/Content/Query/Create.aspx
 
 
-# Zeitstempel im Format 2020-10-24--07-50-05
-export NOW=`/usr/bin/date "+%Y-%m-%d--%H-%M-%S"`
+# Diese Datei:
+export THIS_FILE=$(/usr/bin/readlink --canonicalize ${0})
+# Das Verzeichnis, in dem diese Datei liegt:
+export THIS_DIR=$(/usr/bin/dirname ${THIS_FILE})
+# Das Verzeichnis über dem Verzeichnis, in dem diese Datei liegt:
+export THIS_PARENT_DIR=$(/usr/bin/readlink --canonicalize ${THIS_DIR}/..)
+# Zeitstempel im Format 2020-10-24--07-50-05:
+export NOW=$(/usr/bin/date "+%Y-%m-%d--%H-%M-%S")
+# Das Verzeichnis, in dem die Excel-DAtein des RKI gepsichert werden:
+export RKI_DATA_DIR=${THIS_DIR}/rki-data
 
-/usr/bin/mkdir -p data
+# Das brauchen wir nur zum Testen:
+echo "THIS_FILE       ${THIS_FILE}"
+echo "THIS_DIR        ${THIS_DIR}"
+echo "THIS_PARENT_DIR ${THIS_PARENT_DIR}"
+echo "RKI_DATA_DIR    ${RKI_DATA_DIR}"
+echo "NOW             ${NOW}"
 
-# Ich habe dummerweise zwei wget-Versionen auf meinem Rechner
-# Version 0.4.3 /rki-data/sdb1/home/obama/bin/node-v10.15.1-linux-x64/bin/wget 
-# GNU Wget 1.20.3 built on linux-gnu /usr/bin/wget
+# Damit stellen wir sicher, dass das Verzeinis auch wirklich exisistiert:
+/usr/bin/mkdir -p ${RKI_DATA_DIR}
 
 # Excel-Datei mit den kumulierten Fallzahlen:
-/usr/bin/wget https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Fallzahlen_Kum_Tab.xlsx?__blob=publicationFile --append-output ./rki-data/wget-rki.log --output-document ./rki-data/RKI-Fallzahlen_Kum_Tab-${NOW}.xlsx
+/usr/bin/wget https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Fallzahlen_Kum_Tab.xlsx?__blob=publicationFile --append-output ${RKI_DATA_DIR}/wget-rki.log --output-document ${RKI_DATA_DIR}/RKI-Fallzahlen_Kum_Tab.xlsx
 
 # Excel-Datei mit den Todesfällen pro Kalenderwoche:
-/usr/bin/wget https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Projekte_RKI/COVID-19_Todesfaelle.xlsx?__blob=publicationFile --append-output ./rki-data/wget-rki.log --output-document ./rki-data/RKI-COVID-19_Todesfaelle-${NOW}.xlsx
+/usr/bin/wget https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Projekte_RKI/COVID-19_Todesfaelle.xlsx?__blob=publicationFile --append-output ${RKI_DATA_DIR}/wget-rki.log --output-document ${RKI_DATA_DIR}/RKI-COVID-19_Todesfaelle.xlsx
 
 # Excel-Datei mit Nowcasting und R-Schätzung
-/usr/bin/wget https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Projekte_RKI/Nowcasting_Zahlen.xlsx?__blob=publicationFile --append-output ./rki-data/wget-rki.log --output-document ./rki-data/RKI-Nowcasting_Zahlen-${NOW}.xlsx
+/usr/bin/wget https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Projekte_RKI/Nowcasting_Zahlen.xlsx?__blob=publicationFile --append-output ${RKI_DATA_DIR}/wget-rki.log --output-document ${RKI_DATA_DIR}/RKI-Nowcasting_Zahlen.xlsx
 
 # Excel-Datei mit Testzahlen
-/usr/bin/wget https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Testzahlen-gesamt.xlsx?__blob=publicationFile --append-output ./rki-data/wget-rki.log --output-document ./rki-data/RKI-Testzahlen-gesamt-${NOW}.xlsx
+/usr/bin/wget https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Testzahlen-gesamt.xlsx?__blob=publicationFile --append-output ${RKI_DATA_DIR}/wget-rki.log --output-document ${RKI_DATA_DIR}/RKI-Testzahlen-gesamt.xlsx
 
 # Excel-Datei mit Altersverteilung
-/usr/bin/wget 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Altersverteilung.xlsx;jsessionid=BBA0E867314E7133E733D3E5D3459A48.internet082?__blob=publicationFile' --append-output ./rki-data/wget-rki.log --output-document ./rki-data/RKI-Altersverteilung-${NOW}.xlsx
+/usr/bin/wget 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Altersverteilung.xlsx;jsessionid=BBA0E867314E7133E733D3E5D3459A48.internet082?__blob=publicationFile' --append-output ${RKI_DATA_DIR}/wget-rki.log --output-document ${RKI_DATA_DIR}/RKI-Altersverteilung.xlsx
 
+git commit ${RKI_DATA_DIR}/*.xlsx -m"${0}: add data automatically downloaded at ${NOW}"
 
-for f in ./rki-data/*${NOW}.xlsx ; do
-    echo "downloaded xlsx file ${f}"
-    /usr/bin/xlsx2csv --all --delimiter ";" --dateformat %Y-%m-%d ${f} ${f}.csv
+for f in ${RKI_DATA_DIR}/RKI*.xlsx ; do
+    echo "extracting csv files from downloaded xlsx file ${f}"
+    /usr/bin/xlsx2csv --all --delimiter ";" --dateformat %Y-%m-%d ${f} ${RKI_DATA_DIR}/$(/usr/bin/basename ${f} .xlsx)-csv
 done
+
+git status -u
 
 
 # curl 'https://services7.arcgis.com/mOBPykOjAyBO2ZKk/arcgis/rest/services/Covid19_RKI_Sums/FeatureServer/0/query?f=json&where=(Meldedatum%3Etimestamp%20%272020-03-01%2022%3A59%3A59%27%20AND%20Meldedatum%20NOT%20BETWEEN%20timestamp%20%272020-11-09%2023%3A00%3A00%27%20AND%20timestamp%20%272020-11-10%2022%3A59%3A59%27)%20AND%20(IdLandkreis%3D%2708111%27)&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=ObjectId%2CSummeFall%2CMeldedatum&orderByFields=Meldedatum%20asc&resultOffset=0&resultRecordCount=32000&resultType=standard&cacheHint=true' \
