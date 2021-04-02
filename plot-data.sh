@@ -83,7 +83,7 @@ while read -r line; do
     fi
     # simply append the original line
     echo "${line}" >> ./data-tests.csv.tmp
-    declare -p array
+    # declare -p array
 done < ./rki-data/RKI-Testzahlen-gesamt-csv/1_Testzahlerfassung.csv
 
 sed -f ./sed-tests ./data-tests.csv.tmp > ./data-tests.csv
