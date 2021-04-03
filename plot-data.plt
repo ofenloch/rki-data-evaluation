@@ -122,5 +122,16 @@ set style fill solid border -1
 
 set output "./graph_tests.png"
 set title "PCR Tests"
-plot './data-tests.csv' using 2:4 title "Total Nr of Tests" with boxes lt 3 , \
-     './data-tests.csv' using 2:5 title "Nr of Positive Tests" with boxes lt 7 
+# not sure whether I should use boxes or linespoints
+# plot './data-tests.csv' using 2:4 title "Total Nr of Tests Per Week" with boxes lt 3 , \
+#     './data-tests.csv' using 2:5 title "Nr of Positive Tests Per Week" with boxes lt 7 
+
+plot './data-tests.csv' using 2:4 title "Total Nr of Tests Per Week" with linespoints lt 3 , \
+     './data-tests.csv' using 2:5 title "Nr of Positive Tests Per Week" with linespoints lt 7 
+
+
+set output "./graph_tests_incidence.png"
+# 83166711 inhabitants at 2019-12-31 according to ./other-data/bevölkerungsstand_alter_de_2019_12_31.csv
+set title "PCR Tests"
+plot './data-tests.csv' using 2:($4/831.66711) title "Tests Per Week Per 100K People (83.17 Mio Inhab)" with linespoints lt 3 , \
+     './data-tests.csv' using 2:($5/831.66711) title "Positive Tests Per Week Per 100K People (83.17 Mio Inhab)" with linespoints lt 7 , \
