@@ -42,4 +42,37 @@ if [ "$#" -ne 2 ]; then
     exit 1
 fi
 
+#
+# TODO: There seems to be an error! Maybe because 2020 was a leap year....
+#
+# ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation$ date --date="2020-12-31" +"%V"
+# 53
+# ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation$ date --date="2021-01-01" +"%V"
+# 53
+# ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation$ date --date="2021-01-02" +"%V"
+# 53
+# ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation$ date --date="2021-01-03" +"%V"
+# 53
+# ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation$ date --date="2021-01-04" +"%V"
+# 01
+# ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation$ 
+# ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation$ ./week_nr_to_date.sh 51 2020
+# "2020-12-21" - "2020-12-27"
+# ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation$ ./week_nr_to_date.sh 52 2020
+# "2020-12-28" - "2021-01-03"
+# ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation$ ./week_nr_to_date.sh 53 2020
+# "2021-01-04" - "2021-01-10"
+# ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation$ 
+week52=$( weekof 52 2020 )
+week53=$( weekof 53 2020 )
+week0=$( weekof 0 2021 )
+week1=$( weekof 1 2021 )
+
+echo "DEBUG: weekof 52 2020 ${week52}"
+echo "DEBUG: weekof 53 2020 ${week53}"
+echo "DEBUG: weekof 0 2021  ${week0}"
+echo "DEBUG: weekof 1 2021  ${week1}"
+
+
+
 weekof ${1} ${2}
