@@ -40,8 +40,11 @@ if [ "$#" -ne 2 ]; then
     echo "Usage:"
     echo "  ${0} WeekNumber Year"
     echo "Example:"
-    echo "  ${0} 12 2021"
-    echo "  $(weekof 12 2021)"
+    echo "  ${0} 12 2021 -> $(weekof 12 2021)"
+    echo "  ${0} 52 2020 -> $(weekof 52 2020)"
+    echo "  ${0} 53 2020 -> $(weekof 53 2020)"
+    echo "  ${0} 0 2021  -> $(weekof 0 2021)"
+    echo "  ${0} 1 2021  -> $(weekof 1 2021)"
     exit 1
 fi
 
@@ -66,15 +69,15 @@ fi
 # ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation$ ./week_nr_to_date.sh 53 2020
 # "2021-01-04" - "2021-01-10"
 # ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation$ 
-week52=$( weekof 52 2020 )
-week53=$( weekof 53 2020 )
-week0=$( weekof 0 2021 )
-week1=$( weekof 1 2021 )
 
-echo "DEBUG: weekof 52 2020 ${week52}"
-echo "DEBUG: weekof 53 2020 ${week53}"
-echo "DEBUG: weekof 0 2021  ${week0}"
-echo "DEBUG: weekof 1 2021  ${week1}"
+# week52=$( weekof 52 2020 )
+# week53=$( weekof 53 2020 )
+# week0=$( weekof 0 2021 )
+# week1=$( weekof 1 2021 )
+# echo "DEBUG: weekof 52 2020 ${week52}"
+# echo "DEBUG: weekof 53 2020 ${week53}"
+# echo "DEBUG: weekof 0 2021  ${week0}"
+# echo "DEBUG: weekof 1 2021  ${week1}"
 
 # Wikipedia says (https://en.wikipedia.org/wiki/ISO_week_date)
 #
