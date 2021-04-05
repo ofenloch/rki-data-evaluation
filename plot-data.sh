@@ -12,6 +12,17 @@ sed -f ./sed-nowcasting ./rki-data/RKI-Nowcasting_Zahlen-csv/Nowcast_R.csv > ./d
 # process each line and use the funtion weekof() on the first coumn
 # the result is file ./data-tests.csv.tmp which is then processed with sed
 
+
+# The DIVI data comes in one file for all German states. So, we split it up:
+for f in DEUTSCHLAND HAMBURG THUERINGEN SCHLESWIG_HOLSTEIN SACHSEN BADEN_WUERTTEMBERG SACHSEN_ANHALT BAYERN BERLIN MECKLENBURG_VORPOMMERN BREMEN NIEDERSACHSEN RHEINLAND_PFALZ SAARLAND NORDRHEIN_WESTFALEN HESSEN BRANDENBURG; do
+    echo "creating DIVI data for ${f} ..."
+    /bin/rm -f ./data-divi-${f}.csv.tmp
+    /usr/bin/head -1 rki-data/bundesland-zeitreihe.csv > ./data-divi-${f}.csv.tmp
+    /usr/bin/grep ${f} rki-data/bundesland-zeitreihe.csv >> ./data-divi-${f}.csv.tmp
+    /usr/bin/sed -f ./sed-divi ./data-divi-${f}.csv.tmp > ./data-divi-${f}.csv
+    /bin/rm -f ./data-divi-${f}.csv.tmp
+done
+
 # we use this function to convert weeknumber to date range
 #  e.g. "43/2020" to "2020-10-26;2020-11-01"
 function weekof()
@@ -87,6 +98,7 @@ while read -r line; do
 done < ./rki-data/RKI-Testzahlen-gesamt-csv/1_Testzahlerfassung.csv
 
 sed -f ./sed-tests ./data-tests.csv.tmp > ./data-tests.csv
+/bin/rm -f ./data-tests.csv.tmp
 
 #
 # use gnuplot to plot some graphs

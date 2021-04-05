@@ -1,0 +1,8 @@
+# comment line 1:
+1 s/^/# /
+
+# replace "," by ";"
+s/,/;/g
+
+# replace "\"" by ""
+s/"//g
