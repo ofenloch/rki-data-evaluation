@@ -101,6 +101,15 @@ plot avg7_sum = init7(0) \
      datafile using 1:4 title "Cases Daily" with lines lt 3 lw 1, \
      datafile using 1:(avg7($4)) title "7 day avg" with lines lt 7 lw 2
 
+set output "./grafik_cases_daily_vs_tests.png"
+set title "Cases Daily"
+plot avg7_sum = init7(0) \
+     datafile using 1:4 title "Cases Daily" with lines lt 3 lw 1, \
+     datafile using 1:(avg7($4)) title "7 day avg" with lines lt 7 lw 2 ,\
+     './data-tests.csv' using 2:($5/7) title "Daily Positive Tests (7 day avg)" with linespoints lt 0 lw 2
+#     './data-tests.csv' using 2:($4/7) title "Daily Tests (7 day avg)" with linespoints lt 4, \
+    
+
 
 datafile = 'data-nowcasting.csv'
 
@@ -132,6 +141,16 @@ plot './data-tests.csv' using 2:4 title "Total Nr of Tests Per Week" with linesp
 
 set output "./graph_tests_incidence.png"
 # 83166711 inhabitants at 2019-12-31 according to ./other-data/bevölkerungsstand_alter_de_2019_12_31.csv
-set title "PCR Tests"
-plot './data-tests.csv' using 2:($4/831.66711) title "Tests Per Week Per 100K People (83.17 Mio Inhab)" with linespoints lt 3 , \
-     './data-tests.csv' using 2:($5/831.66711) title "Positive Tests Per Week Per 100K People (83.17 Mio Inhab)" with linespoints lt 7 , \
+set title "PCR Tests Per Week Per 100k (83.17 Mio Inhab)"
+plot avg7_sum = init7(0) \
+     './data-tests.csv' using 2:($4/831.66711) title "Tests / Week / 100k People " with linespoints lt 3 , \
+     './data-tests.csv' using 2:($5/831.66711) title "Positive Tests / Week / 100k People" with linespoints lt 5, \
+     datafile using 1:(avg7($4)/831.66711*7) title "Daily Cases / 100k People (7 day avg)" with lines lt 7 lw 2 ,\
+
+set output "./graph_tests_incidence_scaled.png"
+# 83166711 inhabitants at 2019-12-31 according to ./other-data/bevölkerungsstand_alter_de_2019_12_31.csv
+set title "PCR Tests Per Week Per 100k (83.17 Mio Inhab)"
+plot [][0:300]  avg7_sum = init7(0) \
+     './data-tests.csv' using 2:($4/831.66711) title "Tests / Week / 100k People " with linespoints lt 3 , \
+     './data-tests.csv' using 2:($5/831.66711) title "Positive Tests / Week / 100k People" with linespoints lt 5, \
+     datafile using 1:(avg7($4)/831.66711*7) title "Daily Cases / 100k People (7 day avg)" with lines lt 7 lw 2 ,\
