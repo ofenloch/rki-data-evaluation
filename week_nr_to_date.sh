@@ -28,8 +28,11 @@ function weekof()
     week_day_of_Jan_1=$(/usr/bin/date -d ${year}-01-01 +%u)
 
     if ((week_num_of_Jan_1)); then
+        # week_num_of_Jan_1 is > 0
+        # -> the year starts with a monday
         first_Mon=${year}-01-01
     else
+        # week_num_of_Jan_1 = 0
         first_Mon=${year}-01-$((01 + (7 - week_day_of_Jan_1 + 1) ))
     fi
 
