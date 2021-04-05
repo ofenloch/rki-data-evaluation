@@ -50,7 +50,7 @@ set xdata time
 set timefmt "%Y-%m-%d"  # "Di, 10. März 2020"
 # set format x "%F"  # "2020-03-10"
 set format x "%d.%m.%y" # "06.08.20"
-set format x "%d.%m" # "06.08"
+set format x "%d.%m." # "06.08."
 
 #set xrange ['Sa, 1. August 2020':'Sa, 10. Oktober 2020']
 # set xrange ['"Sat, 1. August 2020"':]
@@ -154,3 +154,23 @@ plot [][0:300]  avg7_sum = init7(0) \
      './data-tests.csv' using 2:($4/831.66711) title "Tests / Week / 100k People " with linespoints lt 3 , \
      './data-tests.csv' using 2:($5/831.66711) title "Positive Tests / Week / 100k People" with linespoints lt 5, \
      datafile using 1:(avg7($4)/831.66711*7) title "Daily Cases / 100k People (7 day avg)" with lines lt 7 lw 2 ,\
+
+
+set output "./graph_icu_load_DEUTSCHLAND.png"
+set title "ICU Load Germany"
+plot './data-divi-DEUTSCHLAND.csv' using 1:6 title "Free ICU Beds" with lines lt 2 lw 2, \
+     './data-divi-DEUTSCHLAND.csv' using 1:4 title "COVID-19 ICU Patients" with lines lt 7 lw 2, \
+     './data-divi-DEUTSCHLAND.csv' using 1:5 title "All ICU Patients" with lines lt 3, \
+     './data-divi-DEUTSCHLAND.csv' using 1:($5-$4) title "Non-COVID-19 ICU Patients" with lines lt 9, \
+     './data-divi-DEUTSCHLAND.csv' using 1:($5+$6) title "All ICU Beds" with lines lt 4
+     
+set output "./graph_icu_load_BADEN_WUERTTEMBERG.png"
+set title "ICU Load Baden-Württemberg, Germany"
+plot './data-divi-BADEN_WUERTTEMBERG.csv' using 1:6 title "Free ICU Beds" with lines lt 2 lw 2, \
+     './data-divi-BADEN_WUERTTEMBERG.csv' using 1:4 title "COVID-19 ICU Patients" with lines lt 7 lw 2, \
+     './data-divi-BADEN_WUERTTEMBERG.csv' using 1:5 title "All ICU Patients" with lines lt 3, \
+     './data-divi-BADEN_WUERTTEMBERG.csv' using 1:($5-$4) title "Non-COVID-19 ICU Patients" with lines lt 9, \
+     './data-divi-BADEN_WUERTTEMBERG.csv' using 1:($5+$6) title "All ICU Beds" with lines lt 4
+
+set output './test.png'
+test
