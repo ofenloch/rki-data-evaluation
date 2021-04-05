@@ -20,6 +20,7 @@ function weekof()
     local date_fmt="+%Y-%m-%d" # something like "2021-08-29"
     local mon sun
 
+    #    %W     week number of year, with Monday as first day of week (00..53)
     week_num_of_Jan_1=$(/usr/bin/date -d ${year}-01-01 +%W)
     # ISO conform: %V     ISO week number, with Monday as first day of week (01..53)
     # week_num_of_Jan_1=$(/usr/bin/date -d ${year}-01-01 +%V)
