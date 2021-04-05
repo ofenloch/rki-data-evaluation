@@ -40,7 +40,7 @@ if [ "$#" -ne 2 ]; then
     echo "Usage:"
     echo "  ${0} WeekNumber Year"
     echo "Example:"
-    echo "  ${0} 12 2021 -> $(weekof 12 2021)"
+    echo "  ${0} 1 2020  -> $(weekof 1 2020)"
     echo "  ${0} 52 2020 -> $(weekof 52 2020)"
     echo "  ${0} 53 2020 -> $(weekof 53 2020)"
     echo "  ${0} 0 2021  -> $(weekof 0 2021)"
