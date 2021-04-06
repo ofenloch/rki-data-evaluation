@@ -23,6 +23,14 @@ for f in DEUTSCHLAND HAMBURG THUERINGEN SCHLESWIG_HOLSTEIN SACHSEN BADEN_WUERTTE
     /bin/rm -f ./data-divi-${f}.csv.tmp
 done
 
+
+# The data about the PCR tests is only given per week. I assume, RKI uses ISO week numbers for this information:
+# * year 2020 ends with week number 53
+# * year 2021 starts with week 01
+
+# ISO week 53/2020 starts with Monday, 2020-12-28, and ends with Sunday, 2021-01-03.
+# ISO week 01/2021 starts with Monday, 2021-01-04, and ends with Sunday, 2021-01-10.
+
 # we use this function to convert weeknumber to date range
 #  e.g. "43/2020" to "2020-10-26;2020-11-01"
 function weekof()
