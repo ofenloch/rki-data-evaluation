@@ -9,7 +9,7 @@ sed -f ./sed-nowcasting ./rki-data/RKI-Nowcasting_Zahlen-csv/Nowcast_R.csv > ./d
 #   sed -f ./sed-tests ./rki-data/RKI-Testzahlen-gesamt-csv/1_Testzahlerfassung.csv > ./data-tests.csv
 # but we have to convert the weeknr/year to proper date ranges for plotting (e.g. "50 2020" to  "2020-12-14;2020-12-20")
 # so we read the file ./rki-data/RKI-Testzahlen-gesamt-csv/1_Testzahlerfassung.csv line by line and
-# process each line and use the funtion weekof() on the first coumn
+# process each line and use the funtion iso_week_num_to_date() on the first coumn
 # the result is file ./data-tests.csv.tmp which is then processed with sed
 
 
@@ -33,25 +33,46 @@ done
 
 # we use this function to convert weeknumber to date range
 #  e.g. "43/2020" to "2020-10-26;2020-11-01"
-function weekof()
-{
+function iso_week_num_to_date() {
+
     local week=${1} year=${2}
-    local week_num_of_Jan_1 week_day_of_Jan_1
-    local first_Mon
+    local dow_jan_4
+    local first_mon_in_year
+    local date_fmt="+%a %b %d %Y" # something like "So Apr 04 2021"
     local date_fmt="+%Y-%m-%d" # something like "2021-08-29"
     local mon sun
 
-    week_num_of_Jan_1=$(/usr/bin/date -d ${year}-01-01 +%W)
-    week_day_of_Jan_1=$(/usr/bin/date -d ${year}-01-01 +%u)
-
-    if ((week_num_of_Jan_1)); then
-        first_Mon=${year}-01-01
-    else
-        first_Mon=${year}-01-$((01 + (7 - week_day_of_Jan_1 + 1) ))
+    if ((week>53)) ; then 
+        echo "maximal ISO week number is 53"
+        exit 1
     fi
-
-    mon=$(/usr/bin/date -d "${first_Mon} +$((week - 1)) week" "${date_fmt}")
-    sun=$(/usr/bin/date -d "${first_Mon} +$((week - 1)) week + 6 day" "${date_fmt}")
+    if ((week<1)) ; then
+        echo "minimal ISO week number is 1"
+        exit 2
+    fi
+    #echo "${week}/${year}"
+    # by definition, the 4th of January is in (ISO) week number 1
+    # ISO conform: %u     day of week (1..7); 1 is Monday
+    dow_jan_4=$(/usr/bin/date -d ${year}-01-04 +%u)
+    if ((dow_jan_4==1)) ; then
+        # Jan 4 is a Monday and this the first Monday in the year
+        first_mon_in_year=${year}-01-04
+        mon=$(/usr/bin/date -d "${first_mon_in_year} +$((week - 1)) week" "${date_fmt}")
+        sun=$(/usr/bin/date -d "${first_mon_in_year} +$((week - 1)) week + 6 day" "${date_fmt}")
+    else
+        if ((dow_jan_4<4)) ; then
+            # the first Monday is in this year
+            first_mon_in_year=${year}-01-$((04 - dow_jan_4))
+            mon=$(/usr/bin/date -d "${first_mon_in_year} +$((week - 1)) week" "${date_fmt}")
+            sun=$(/usr/bin/date -d "${first_mon_in_year} +$((week - 1)) week + 6 day" "${date_fmt}")
+        else
+            # the first Monday is in the previous year
+            first_mon_in_year=${year}-01-$((04 + 7 - dow_jan_4 + 1))
+            mon=$(/usr/bin/date -d "${first_mon_in_year} +$((week - 2)) week" "${date_fmt}")
+            sun=$(/usr/bin/date -d "${first_mon_in_year} +$((week - 2)) week + 6 day" "${date_fmt}")
+        fi
+    fi
+    #echo "   first_mon_in_year is ${first_mon_in_year}   ( $(/usr/bin/date -d ${first_mon_in_year} +%a) )"
     echo "${mon};${sun}"
 }
 
@@ -92,7 +113,7 @@ while read -r line; do
         year=${first:2:5}
     fi
     echo "  weeknr = ${weeknr} ; year = ${year}"
-    firstnew=$(weekof ${weeknr} ${year})
+    firstnew=$(iso_week_num_to_date ${weeknr} ${year})
     if [[ ${#first} > 5 ]] ; then
         # we should have a valid  week number and a valid date range
         echo -n "${firstnew};" >> ./data-tests.csv.tmp

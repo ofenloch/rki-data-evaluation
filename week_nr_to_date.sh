@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Convert Week Number to date
+# Convert ISO Week Number to date of corresponding Monday and Sunday
 #
 #  ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation$ ./week_nr_to_date.sh 1 2021
 #  "Mo Jan 04 2021" - "So Jan 10 2021"
@@ -9,46 +9,58 @@
 #  ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation$ 
 #
 
-# I found this on stackoverflow: https://stackoverflow.com/questions/15606567/unix-date-how-to-convert-week-number-date-w-to-a-date-range-mon-sun
+function iso_week_num_to_date() {
 
-function weekof()
-{
     local week=${1} year=${2}
-    local week_num_of_Jan_1 week_day_of_Jan_1
-    local first_Mon
+    local dow_jan_4
+    local first_mon_in_year
     local date_fmt="+%a %b %d %Y" # something like "So Apr 04 2021"
     local date_fmt="+%Y-%m-%d" # something like "2021-08-29"
     local mon sun
 
-    #    %W     week number of year, with Monday as first day of week (00..53)
-    week_num_of_Jan_1=$(/usr/bin/date -d ${year}-01-01 +%W)
-    # ISO conform: %V     ISO week number, with Monday as first day of week (01..53)
-    # week_num_of_Jan_1=$(/usr/bin/date -d ${year}-01-01 +%V)
-    # ISO conform: %u     day of week (1..7); 1 is Monday
-    week_day_of_Jan_1=$(/usr/bin/date -d ${year}-01-01 +%u)
-
-    if ((week_num_of_Jan_1)); then
-        # week_num_of_Jan_1 is > 0
-        # -> the year starts with a monday
-        first_Mon=${year}-01-01
-    else
-        # week_num_of_Jan_1 = 0
-        first_Mon=${year}-01-$((01 + (7 - week_day_of_Jan_1 + 1) ))
+    if ((week>53)) ; then 
+        echo "maximal ISO week number is 53"
+        exit 1
     fi
-
-    mon=$(/usr/bin/date -d "${first_Mon} +$((week - 1)) week" "${date_fmt}")
-    sun=$(/usr/bin/date -d "${first_Mon} +$((week - 1)) week + 6 day" "${date_fmt}")
-    echo "\"${mon}\" - \"${sun}\""
+    if ((week<1)) ; then
+        echo "minimal ISO week number is 1"
+        exit 2
+    fi
+    echo "${week}/${year}"
+    # by definition, the 4th of January is in (ISO) week number 1
+    # ISO conform: %u     day of week (1..7); 1 is Monday
+    dow_jan_4=$(/usr/bin/date -d ${year}-01-04 +%u)
+    if ((dow_jan_4==1)) ; then
+        # Jan 4 is a Monday and this the first Monday in the year
+        first_mon_in_year=${year}-01-04
+        mon=$(/usr/bin/date -d "${first_mon_in_year} +$((week - 1)) week" "${date_fmt}")
+        sun=$(/usr/bin/date -d "${first_mon_in_year} +$((week - 1)) week + 6 day" "${date_fmt}")
+    else
+        if ((dow_jan_4<4)) ; then
+            # the first Monday is in this year
+            first_mon_in_year=${year}-01-$((04 - dow_jan_4))
+            mon=$(/usr/bin/date -d "${first_mon_in_year} +$((week - 1)) week" "${date_fmt}")
+            sun=$(/usr/bin/date -d "${first_mon_in_year} +$((week - 1)) week + 6 day" "${date_fmt}")
+        else
+            # the first Monday is in the previous year
+            first_mon_in_year=${year}-01-$((04 + 7 - dow_jan_4 + 1))
+            mon=$(/usr/bin/date -d "${first_mon_in_year} +$((week - 2)) week" "${date_fmt}")
+            sun=$(/usr/bin/date -d "${first_mon_in_year} +$((week - 2)) week + 6 day" "${date_fmt}")
+        fi
+    fi
+    #echo "   first_mon_in_year is ${first_mon_in_year}   ( $(/usr/bin/date -d ${first_mon_in_year} +%a) )"
+    echo "iso week ${week}/${year} : \"${mon}\" - \"${sun}\""
 }
+
 if [ "$#" -ne 2 ]; then
     echo "Usage:"
     echo "  ${0} WeekNumber Year"
     echo "Example:"
-    echo "  ${0} 1 2020  -> $(weekof 1 2020)"
-    echo "  ${0} 52 2020 -> $(weekof 52 2020)"
-    echo "  ${0} 53 2020 -> $(weekof 53 2020)"
-    echo "  ${0} 0 2021  -> $(weekof 0 2021)"
-    echo "  ${0} 1 2021  -> $(weekof 1 2021)"
+    echo "  ${0} 1 2020  -> $(iso_week_num_to_date 1 2020)"
+    echo "  ${0} 52 2020 -> $(iso_week_num_to_date 52 2020)"
+    echo "  ${0} 53 2020 -> $(iso_week_num_to_date 53 2020)"
+    #echo "  ${0} 0 2021  -> $(iso_week_num_to_date 0 2021)"
+    echo "  ${0} 1 2021  -> $(iso_week_num_to_date 1 2021)"
     exit 1
 fi
 
@@ -74,14 +86,14 @@ fi
 # "2021-01-04" - "2021-01-10"
 # ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation$ 
 
-# week52=$( weekof 52 2020 )
-# week53=$( weekof 53 2020 )
-# week0=$( weekof 0 2021 )
-# week1=$( weekof 1 2021 )
-# echo "DEBUG: weekof 52 2020 ${week52}"
-# echo "DEBUG: weekof 53 2020 ${week53}"
-# echo "DEBUG: weekof 0 2021  ${week0}"
-# echo "DEBUG: weekof 1 2021  ${week1}"
+# week52=$( iso_week_num_to_date 52 2020 )
+# week53=$( iso_week_num_to_date 53 2020 )
+# week0=$( iso_week_num_to_date 0 2021 )
+# week1=$( iso_week_num_to_date 1 2021 )
+# echo "DEBUG: iso_week_num_to_date 52 2020 ${week52}"
+# echo "DEBUG: iso_week_num_to_date 53 2020 ${week53}"
+# echo "DEBUG: iso_week_num_to_date 0 2021  ${week0}"
+# echo "DEBUG: iso_week_num_to_date 1 2021  ${week1}"
 
 # Wikipedia says (https://en.wikipedia.org/wiki/ISO_week_date)
 #
@@ -120,4 +132,4 @@ fi
 
 
 
-weekof ${1} ${2}
+iso_week_num_to_date ${1} ${2}
