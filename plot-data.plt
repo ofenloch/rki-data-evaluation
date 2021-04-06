@@ -55,7 +55,7 @@ set format x "%d.%m." # "06.08."
 #set xrange ['Sa, 1. August 2020':'Sa, 10. Oktober 2020']
 # set xrange ['"Sat, 1. August 2020"':]
 
-datafile = 'data-cases.csv'
+datafile = './data-cases.csv'
 
 # Define a function to calculate average over previous 3 points ($0 is the record index)
 samples3(x) = $0 > 2 ? 3 : ($0+1)
@@ -111,7 +111,7 @@ plot avg7_sum = init7(0) \
     
 
 
-datafile = 'data-nowcasting.csv'
+datafile = './data-nowcasting.csv'
 
 set output "./graph_r_4_days.png"
 set title "R (4 Days)"
@@ -171,6 +171,18 @@ plot './data-divi-BADEN_WUERTTEMBERG.csv' using 1:6 title "Free ICU Beds" with l
      './data-divi-BADEN_WUERTTEMBERG.csv' using 1:5 title "All ICU Patients" with lines lt 3, \
      './data-divi-BADEN_WUERTTEMBERG.csv' using 1:($5-$4) title "Non-COVID-19 ICU Patients" with lines lt 9, \
      './data-divi-BADEN_WUERTTEMBERG.csv' using 1:($5+$6) title "All ICU Beds" with lines lt 4
+
+
+set output "./graph_correlations.png"
+set title "Correlations"
+plot [][0:] avg7_sum = init7(0) \
+     datafile using 1:(avg7($4)) title "Daily Cases (7 day avg)" with lines ,\
+     './data-divi-DEUTSCHLAND.csv' using 1:4 title "COVID-19 ICU Patients" with lines, \
+     './data-cases.csv' using 1:6 title "Daily COVID-19 Deaths" with lines ,\
+     './data-tests.csv' using 2:($5/7) title "Positive Tests (7 day avg)" with linespoints , \
+
+
+
 
 set output './test.png'
 test
