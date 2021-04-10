@@ -93,7 +93,8 @@ init7(x) = (avg7_back7 = avg7_back6 = avg7_back5 = avg7_back4 = avg7_back3 = avg
 
 set output "./graph_cases_cumulative.png"
 set title "Cases Cumulative"
-plot datafile using 1:2 title "Total Cases" with lines lt 3 lw 1
+plot datafile using 1:2 title "Total Cases" with lines lt 3 lw 1 , \
+     datafile using 1:5 title "Total Deaths" with lines lt 4 lw 1
 
 set output "./grafik_cases_daily.png"
 set title "Cases Daily"
@@ -116,12 +117,14 @@ datafile = './data-nowcasting.csv'
 set output "./graph_r_4_days.png"
 set title "R (4 Days)"
 plot avg7_sum = init7(0) \
+     1 notitle lt -1 lw 1, \
      datafile using 1:8 title "4 day R" with lines lt 3 lw 1, \
      datafile using 1:(avg7($8)) title "7 day avg" with lines lt 7 lw 2
 
 set output "./graph_r_7_days.png"
 set title "R (7 Days)"
 plot avg7_sum = init7(0) \
+     1 notitle lt -1 lw 1, \
      datafile using 1:11 title "7 day R" with lines lt 3 lw 1, \
      datafile using 1:(avg7($11)) title "7 day avg" with lines lt 7 lw 2
 
