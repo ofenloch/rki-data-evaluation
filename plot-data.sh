@@ -13,17 +13,6 @@ sed -f ./sed-nowcasting ./rki-data/RKI-Nowcasting_Zahlen-csv/Nowcast_R.csv > ./d
 # the result is file ./data-tests.csv.tmp which is then processed with sed
 
 
-# The DIVI data comes in one file for all German states. So, we split it up:
-for f in DEUTSCHLAND HAMBURG THUERINGEN SCHLESWIG_HOLSTEIN SACHSEN BADEN_WUERTTEMBERG SACHSEN_ANHALT BAYERN BERLIN MECKLENBURG_VORPOMMERN BREMEN NIEDERSACHSEN RHEINLAND_PFALZ SAARLAND NORDRHEIN_WESTFALEN HESSEN BRANDENBURG; do
-    echo "creating DIVI data for ${f} ..."
-    /bin/rm -f ./data-divi-${f}.csv.tmp
-    /usr/bin/head -1 rki-data/bundesland-zeitreihe.csv > ./data-divi-${f}.csv.tmp
-    /usr/bin/grep ${f} rki-data/bundesland-zeitreihe.csv >> ./data-divi-${f}.csv.tmp
-    /usr/bin/sed -f ./sed-divi ./data-divi-${f}.csv.tmp > ./data-divi-${f}.csv
-    /bin/rm -f ./data-divi-${f}.csv.tmp
-done
-
-
 # The data about the PCR tests is only given per week. I assume, RKI uses ISO week numbers for this information:
 # * year 2020 ends with week number 53
 # * year 2021 starts with week 01
@@ -128,6 +117,21 @@ done < ./rki-data/RKI-Testzahlen-gesamt-csv/1_Testzahlerfassung.csv
 
 sed -f ./sed-tests ./data-tests.csv.tmp > ./data-tests.csv
 /bin/rm -f ./data-tests.csv.tmp
+
+
+
+
+# The DIVI data comes in one file for all German states. So, we split it up:
+for f in DEUTSCHLAND HAMBURG THUERINGEN SCHLESWIG_HOLSTEIN SACHSEN BADEN_WUERTTEMBERG SACHSEN_ANHALT BAYERN BERLIN MECKLENBURG_VORPOMMERN BREMEN NIEDERSACHSEN RHEINLAND_PFALZ SAARLAND NORDRHEIN_WESTFALEN HESSEN BRANDENBURG; do
+    echo "creating DIVI data for ${f} ..."
+    /bin/rm -f ./data-divi-${f}.csv.tmp
+    /usr/bin/head -1 rki-data/bundesland-zeitreihe.csv > ./data-divi-${f}.csv.tmp
+    /usr/bin/grep ${f} rki-data/bundesland-zeitreihe.csv >> ./data-divi-${f}.csv.tmp
+    /usr/bin/sed -f ./sed-divi ./data-divi-${f}.csv.tmp > ./data-divi-${f}.csv
+    /bin/rm -f ./data-divi-${f}.csv.tmp
+done
+
+
 
 #
 # use gnuplot to plot some graphs
