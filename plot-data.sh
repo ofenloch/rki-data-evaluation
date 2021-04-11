@@ -65,20 +65,19 @@ function iso_week_num_to_date() {
     echo "${mon};${sun}"
 }
 
-# delete the temporary file
+# delete the temporary file ./data-tests.csv.tmp:
 /bin/rm -f ./data-tests.csv.tmp
-
-# initialize the line counter
+# initialize the line counter:
 n=1
-
-# Set semicolon as the delimiter
+# Set semicolon as the delimiter:
 delimiter=";"
-
-# read the file line by line
+# read the file line by line and process eacj line:
 while read -r line; do 
     #echo "line ${n} is \"${line}\""
     echo -n "processing line ${n}:"
     n=$((n+1))
+    # replace '*' e.g. "11/2021*;" by "11/2021;"
+    line=${line/\*;/;}
     # split the line at the delimiter
     s=${line}${delimiter}
     #echo "  s is \"${s}\""
