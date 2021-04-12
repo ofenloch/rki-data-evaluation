@@ -183,6 +183,7 @@ plot [][0:] avg7_sum = init7(0) \
      './data-divi-DEUTSCHLAND.csv' using 1:4 title "COVID-19 ICU Patients" with lines, \
      './data-cases.csv' using 1:6 title "Daily COVID-19 Deaths" with lines ,\
      './data-tests.csv' using 2:($5/7) title "Positive Tests (7 day avg)" with linespoints , \
+     './data-clinical.csv' using 1:12 title "Hospitalized COVID-19 Patients" with linespoints , \
 
 
 
