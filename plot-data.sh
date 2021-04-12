@@ -118,7 +118,52 @@ function format_test_data() {
     /bin/rm -f ./data-tests.csv.tmp
 } # function format_test_data() {
 
+
+function format_clinical_data() {
+    # delete the temporary file ./data-tests.csv.tmp:
+    /bin/rm -f ./data-clinical.csv.tmp
+    # initialize the line counter:
+    n=1
+    # Set semicolon as the delimiter:
+    delimiter=";"
+    regexp_number='^[0-9]+$'
+    # read the file line by line and process eacj line:
+    while read -r line; do 
+        #echo "line ${n} is \"${line}\""
+        echo -n "processing line ${n}:"
+        n=$((n+1))
+        # replace '*' e.g. "11/2021*;" by "11/2021;"
+        line=${line/\*;/;}
+        # split the line at the delimiter
+        s=${line}${delimiter}
+        #echo "  s is \"${s}\""
+        array=();
+        while [[ $s ]]; do
+            array+=( "${s%%"$delimiter"*}" );
+            s=${s#*"$delimiter"};
+        done;
+        #echo "array[0] is \"${array[0]}\""
+        year=${array[0]}
+        weeknr=${array[1]}
+        firstnew="Mon;Sun"
+        echo "  weeknr = ${weeknr} ; year = ${year}"
+        if [[ ${weeknr} =~ ${regexp_number} ]] ; then
+            # we should have a valid  week number and a valid date range
+            firstnew=$(iso_week_num_to_date ${weeknr} ${year})
+        fi 
+        echo -n "${firstnew};" >> ./data-clinical.csv.tmp
+        # simply append the original line
+        echo "${line}" >> ./data-clinical.csv.tmp
+        # declare -p array
+    done < ./rki-data/RKI-Klinische-Aspekte-csv/Klinischer\ Aspekte.csv
+    sed -f ./sed-clinical ./data-clinical.csv.tmp > ./data-clinical.csv
+    /bin/rm -f ./data-clinical.csv.tmp
+} # function format_clinical_data() {
+
+
 format_test_data
+
+format_clinical_data
 
 # The DIVI data comes in one file for all German states. So, we split it up:
 for f in DEUTSCHLAND HAMBURG THUERINGEN SCHLESWIG_HOLSTEIN SACHSEN BADEN_WUERTTEMBERG SACHSEN_ANHALT BAYERN BERLIN MECKLENBURG_VORPOMMERN BREMEN NIEDERSACHSEN RHEINLAND_PFALZ SAARLAND NORDRHEIN_WESTFALEN HESSEN BRANDENBURG; do
