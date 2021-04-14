@@ -155,7 +155,7 @@ function format_clinical_data() {
         # simply append the original line
         echo "${line}" >> ./data-clinical.csv.tmp
         # declare -p array
-    done < ./rki-data/RKI-Klinische-Aspekte-csv/Klinischer\ Aspekte.csv
+    done < ./rki-data/RKI-Klinische-Aspekte-csv/Klinische_Aspekte.csv
     sed -f ./sed-clinical ./data-clinical.csv.tmp > ./data-clinical.csv
     /bin/rm -f ./data-clinical.csv.tmp
 } # function format_clinical_data() {
