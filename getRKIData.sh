@@ -69,7 +69,7 @@ echo "NOW             ${NOW}"
 /usr/bin/wget 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Klinische_Aspekte.xlsx?__blob=publicationFile' --append-output ${RKI_DATA_DIR}/wget-rki.log --output-document ${RKI_DATA_DIR}/RKI-Klinische-Aspekte.xlsx
 
 # Die Zeitreihen des DIVI-Intensivregisters gibt es hier
-/usr/bin/wget https://diviexchange.blob.core.windows.net/%24web/bundesland-zeitreihe.csv --append-output ./rki-data/wget-rki.log --output-document ./rki-data/bundesland-zeitreihe.csv
+/usr/bin/wget https://diviexchange.blob.core.windows.net/%24web/bundesland-zeitreihe.csv --append-output ${RKI_DATA_DIR}/wget-rki.log --output-document ${RKI_DATA_DIR}/bundesland-zeitreihe.csv
 
 
 cd ${THIS_DIR}
