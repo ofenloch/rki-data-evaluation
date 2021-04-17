@@ -2,6 +2,12 @@
 # Erzeuge Grafiken aus den Daten der CSV-Datei mit den RKI-DAten
 #
 
+# erzeuge png-Dateien
+#set term png
+
+# erzeuge svg-Bilder
+set terminal svg size 600,400 dynamic enhanced font 'arial,10' mousing name "array_1" butt dashlength 1.0 
+
 # damit versteht Gnuplot deutschsprachige Datumsangaben
 set locale 'de_DE.utf8'
 
@@ -9,8 +15,7 @@ set locale 'de_DE.utf8'
 # damit erkennt Gnuplot 0,89 statt 0.89 auch beim Lesen der Daten
 #set decimalsign locale
 
-# erzeuge png-Dateien
-set term png
+
 #set key top left
 set key outside below
 
@@ -91,18 +96,18 @@ init7(x) = (avg7_back7 = avg7_back6 = avg7_back5 = avg7_back4 = avg7_back3 = avg
 
 
 
-set output "./graph_cases_cumulative.png"
+set output "./graph_cases_cumulative.svg"
 set title "Cases Cumulative"
 plot datafile using 1:2 title "Total Cases" with lines lt 3 lw 1 , \
      datafile using 1:5 title "Total Deaths" with lines lt 4 lw 1
 
-set output "./graph_cases_daily.png"
+set output "./graph_cases_daily.svg"
 set title "Cases Daily"
 plot avg7_sum = init7(0) \
      datafile using 1:4 title "Cases Daily" with lines lt 3 lw 1, \
      datafile using 1:(avg7($4)) title "7 day avg" with lines lt 7 lw 2
 
-set output "./graph_cases_daily_vs_tests.png"
+set output "./graph_cases_daily_vs_tests.svg"
 set title "Cases Daily"
 plot avg7_sum = init7(0) \
      datafile using 1:4 title "Cases Daily" with lines lt 3 lw 1, \
@@ -114,14 +119,14 @@ plot avg7_sum = init7(0) \
 
 datafile = './data-nowcasting.csv'
 
-set output "./graph_r_4_days.png"
+set output "./graph_r_4_days.svg"
 set title "R (4 Days)"
 plot avg7_sum = init7(0) \
      1 notitle lt -1 lw 1, \
      datafile using 1:8 title "4 day R" with lines lt 3 lw 1, \
      datafile using 1:(avg7($8)) title "7 day avg" with lines lt 7 lw 2
 
-set output "./graph_r_7_days.png"
+set output "./graph_r_7_days.svg"
 set title "R (7 Days)"
 plot avg7_sum = init7(0) \
      1 notitle lt -1 lw 1, \
@@ -132,7 +137,7 @@ plot avg7_sum = init7(0) \
 set style histogram cluster gap 1
 set style fill solid border -1
 
-set output "./graph_tests.png"
+set output "./graph_tests.svg"
 set title "PCR Tests"
 # not sure whether I should use boxes or linespoints
 # plot './data-tests.csv' using 2:4 title "Total Nr of Tests Per Week" with boxes lt 3 , \
@@ -142,7 +147,7 @@ plot './data-tests.csv' using 2:4 title "Total Nr of Tests Per Week" with linesp
      './data-tests.csv' using 2:5 title "Nr of Positive Tests Per Week" with linespoints lt 7 
 
 
-set output "./graph_tests_incidence.png"
+set output "./graph_tests_incidence.svg"
 # 83166711 inhabitants at 2019-12-31 according to ./other-data/bevölkerungsstand_alter_de_2019_12_31.csv
 set title "PCR Tests Per Week Per 100k (83.17 Mio Inhab)"
 plot avg7_sum = init7(0) \
@@ -150,7 +155,7 @@ plot avg7_sum = init7(0) \
      './data-tests.csv' using 2:($5/831.66711) title "Positive Tests / Week / 100k People" with linespoints lt 5, \
      datafile using 1:(avg7($4)/831.66711*7) title "Daily Cases / 100k People (7 day avg)" with lines lt 7 lw 2 ,\
 
-set output "./graph_tests_incidence_scaled.png"
+set output "./graph_tests_incidence_scaled.svg"
 # 83166711 inhabitants at 2019-12-31 according to ./other-data/bevölkerungsstand_alter_de_2019_12_31.csv
 set title "PCR Tests Per Week Per 100k (83.17 Mio Inhab)"
 plot [][0:300]  avg7_sum = init7(0) \
@@ -159,7 +164,7 @@ plot [][0:300]  avg7_sum = init7(0) \
      datafile using 1:(avg7($4)/831.66711*7) title "Daily Cases / 100k People (7 day avg)" with lines lt 7 lw 2 ,\
 
 
-set output "./graph_icu_load_DEUTSCHLAND.png"
+set output "./graph_icu_load_DEUTSCHLAND.svg"
 set title "ICU Load Germany"
 plot './data-divi-DEUTSCHLAND.csv' using 1:6 title "Free ICU Beds" with lines lt 2 lw 2, \
      './data-divi-DEUTSCHLAND.csv' using 1:4 title "COVID-19 ICU Patients" with lines lt 7 lw 2, \
@@ -167,7 +172,7 @@ plot './data-divi-DEUTSCHLAND.csv' using 1:6 title "Free ICU Beds" with lines lt
      './data-divi-DEUTSCHLAND.csv' using 1:($5-$4) title "Non-COVID-19 ICU Patients" with lines lt 9, \
      './data-divi-DEUTSCHLAND.csv' using 1:($5+$6) title "All ICU Beds" with lines lt 4
      
-set output "./graph_icu_load_BADEN_WUERTTEMBERG.png"
+set output "./graph_icu_load_BADEN_WUERTTEMBERG.svg"
 set title "ICU Load Baden-Württemberg, Germany"
 plot './data-divi-BADEN_WUERTTEMBERG.csv' using 1:6 title "Free ICU Beds" with lines lt 2 lw 2, \
      './data-divi-BADEN_WUERTTEMBERG.csv' using 1:4 title "COVID-19 ICU Patients" with lines lt 7 lw 2, \
@@ -176,7 +181,7 @@ plot './data-divi-BADEN_WUERTTEMBERG.csv' using 1:6 title "Free ICU Beds" with l
      './data-divi-BADEN_WUERTTEMBERG.csv' using 1:($5+$6) title "All ICU Beds" with lines lt 4
 
 
-set output "./graph_correlations.png"
+set output "./graph_correlations.svg"
 set title "Correlations"
 plot [][0:] avg7_sum = init7(0) \
      datafile using 1:(avg7($4)) title "Daily Cases (7 day avg)"  with lines lt 7 lw 2 ,\
@@ -188,5 +193,5 @@ plot [][0:] avg7_sum = init7(0) \
 
 
 
-set output './test.png'
+set output './test.svg'
 test
