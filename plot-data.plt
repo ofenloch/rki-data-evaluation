@@ -6,7 +6,10 @@
 #set term png
 
 # erzeuge svg-Bilder
-set terminal svg size 600,400 dynamic enhanced font 'arial,10' mousing name "array_1" butt dashlength 1.0 
+set terminal svg size 600,400 dynamic \
+   enhanced font 'arial,10' \
+   mousing name "array_1" butt dashlength 1.0 \
+   jsdir "./js"
 
 # damit versteht Gnuplot deutschsprachige Datumsangaben
 set locale 'de_DE.utf8'
@@ -101,13 +104,13 @@ set title "Cases Cumulative"
 plot datafile using 1:2 title "Total Cases" with lines lt 3 lw 1 , \
      datafile using 1:5 title "Total Deaths" with lines lt 4 lw 1
 
-set output "./graph_cases_daily.svg"
+set output "./graph_daily_cases.svg"
 set title "Cases Daily"
 plot avg7_sum = init7(0) \
      datafile using 1:4 title "Cases Daily" with lines lt 3 lw 1, \
      datafile using 1:(avg7($4)) title "7 day avg" with lines lt 7 lw 2
 
-set output "./graph_cases_daily_vs_tests.svg"
+set output "./graph_daily_cases_vs_tests.svg"
 set title "Cases Daily"
 plot avg7_sum = init7(0) \
      datafile using 1:4 title "Cases Daily" with lines lt 3 lw 1, \
