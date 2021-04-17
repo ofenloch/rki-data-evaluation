@@ -96,13 +96,13 @@ set title "Cases Cumulative"
 plot datafile using 1:2 title "Total Cases" with lines lt 3 lw 1 , \
      datafile using 1:5 title "Total Deaths" with lines lt 4 lw 1
 
-set output "./grafik_cases_daily.png"
+set output "./graph_cases_daily.png"
 set title "Cases Daily"
 plot avg7_sum = init7(0) \
      datafile using 1:4 title "Cases Daily" with lines lt 3 lw 1, \
      datafile using 1:(avg7($4)) title "7 day avg" with lines lt 7 lw 2
 
-set output "./grafik_cases_daily_vs_tests.png"
+set output "./graph_cases_daily_vs_tests.png"
 set title "Cases Daily"
 plot avg7_sum = init7(0) \
      datafile using 1:4 title "Cases Daily" with lines lt 3 lw 1, \
