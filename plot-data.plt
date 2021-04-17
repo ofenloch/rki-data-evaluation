@@ -100,20 +100,20 @@ init7(x) = (avg7_back7 = avg7_back6 = avg7_back5 = avg7_back4 = avg7_back3 = avg
 
 
 set output "./graph_cases_cumulative.svg"
-set title "Cases Cumulative"
-plot datafile using 1:2 title "Total Cases" with lines lt 3 lw 1 , \
-     datafile using 1:5 title "Total Deaths" with lines lt 4 lw 1
+set title "Cumulative Cases"
+plot datafile using 1:2 title "Cumulative Cases" with lines lt 3 lw 1 , \
+     datafile using 1:5 title "Cumulative Deaths" with lines lt 4 lw 1
 
 set output "./graph_daily_cases.svg"
-set title "Cases Daily"
+set title "Daily Cases"
 plot avg7_sum = init7(0) \
-     datafile using 1:4 title "Cases Daily" with lines lt 3 lw 1, \
+     datafile using 1:4 title "Daily Cases" with lines lt 3 lw 1, \
      datafile using 1:(avg7($4)) title "7 day avg" with lines lt 7 lw 2
 
 set output "./graph_daily_cases_vs_tests.svg"
-set title "Cases Daily"
+set title "Daily Cases"
 plot avg7_sum = init7(0) \
-     datafile using 1:4 title "Cases Daily" with lines lt 3 lw 1, \
+     datafile using 1:4 title "Daily Cases" with lines lt 3 lw 1, \
      datafile using 1:(avg7($4)) title "7 day avg" with lines lt 7 lw 2 ,\
      './data-tests.csv' using 2:($5/7) title "Daily Positive Tests (7 day avg)" with linespoints lt 0 lw 2
 #     './data-tests.csv' using 2:($4/7) title "Daily Tests (7 day avg)" with linespoints lt 4, \
