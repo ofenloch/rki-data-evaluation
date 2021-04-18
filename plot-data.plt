@@ -155,7 +155,7 @@ set output "./graph_tests_incidence.svg"
 set title "PCR Tests Per Week Per 100k (83.17 Mio Inhab)"
 plot avg7_sum = init7(0) \
      './data-tests.csv' using 2:($4/831.66711) title "Tests / Week / 100k People " with linespoints lt 3 , \
-     './data-tests.csv' using 2:($5/831.66711) title "Positive Tests / Week / 100k People" with linespoints lt 5, \
+     './data-tests.csv' using 2:($5/831.66711) title "Positive Tests / Week / 100k People" with linespoints lt 4, \
      datafile using 1:(avg7($4)/831.66711*7) title "Daily Cases / 100k People (7 day avg)" with lines lt 7 lw 2 ,\
 
 set output "./graph_tests_incidence_scaled.svg"
@@ -163,7 +163,7 @@ set output "./graph_tests_incidence_scaled.svg"
 set title "PCR Tests Per Week Per 100k (83.17 Mio Inhab)"
 plot [][0:300]  avg7_sum = init7(0) \
      './data-tests.csv' using 2:($4/831.66711) title "Tests / Week / 100k People " with linespoints lt 3 , \
-     './data-tests.csv' using 2:($5/831.66711) title "Positive Tests / Week / 100k People" with linespoints lt 5, \
+     './data-tests.csv' using 2:($5/831.66711) title "Positive Tests / Week / 100k People" with linespoints lt 4, \
      datafile using 1:(avg7($4)/831.66711*7) title "Daily Cases / 100k People (7 day avg)" with lines lt 7 lw 2 ,\
 
 
@@ -190,8 +190,8 @@ plot [][0:] avg7_sum = init7(0) \
      datafile using 1:(avg7($4)) title "Daily Cases (7 day avg)"  with lines lt 7 lw 2 ,\
      './data-divi-DEUTSCHLAND.csv' using 1:4 title "COVID-19 ICU Patients" with lines, \
      './data-cases.csv' using 1:6 title "Daily COVID-19 Deaths" with lines ,\
-     './data-tests.csv' using 2:($5/7) title "Positive Tests (7 day avg)" with linespoints , \
-     './data-clinical.csv' using 1:12 title "Hospitalized COVID-19 Patients" with linespoints , \
+     './data-tests.csv' using 2:($5/7) title "Positive Tests (7 day avg)" with linespoints lt 4, \
+     './data-clinical.csv' using 1:12 title "Hospitalized COVID-19 Patients" with linespoints lt 12, \
 
 
 
