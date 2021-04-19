@@ -94,7 +94,15 @@ shift7(x) = (avg7_back7 = avg7_back6, avg7_back6 = avg7_back5, avg7_back5 = avg7
 init7(x) = (avg7_back7 = avg7_back6 = avg7_back5 = avg7_back4 = avg7_back3 = avg7_back2 = avg7_back1 = avg7_sum = 0)
 
 
-
+# Umrechnung absolut -> Inzidenz
+# 83166711 Einwohner 2019-12-31 gemäß ./other-data/bevölkerungsstand_alter_de_2019_12_31.csv
+# 20000 positive Tests entsprechen 20000/SCALE_INCIDENCE=24.048 positiven Tests pro 100000 Einwohner
+SCALE_INCIDENCE=831.66711
+# Umrechnung abolut -> Prozent der Bevölkerung
+# 1% der Bevölkerung sind 831667.11 Personen
+# 0.1% der Bevölkerung sind 83166.711 Personen
+# 200000 positive Tests entsprechen  200000/SCALE_PERCENTAGE=0.24 % der Bevölkerung
+SCALE_PERCENTAGE=831667.11
 
 
 
@@ -154,17 +162,17 @@ set output "./graph_tests_incidence.svg"
 # 83166711 inhabitants at 2019-12-31 according to ./other-data/bevölkerungsstand_alter_de_2019_12_31.csv
 set title "PCR Tests Per Week Per 100k (83.17 Mio Inhab)"
 plot avg7_sum = init7(0) \
-     './data-tests.csv' using 2:($4/831.66711) title "Tests / Week / 100k People " with linespoints lt 3 , \
-     './data-tests.csv' using 2:($5/831.66711) title "Positive Tests / Week / 100k People" with linespoints lt 4, \
-     datafile using 1:(avg7($4)/831.66711*7) title "Daily Cases / 100k People (7 day avg)" with lines lt 7 lw 2 ,\
+     './data-tests.csv' using 2:($4/SCALE_INCIDENCE) title "Tests / Week / 100k People " with linespoints lt 3 , \
+     './data-tests.csv' using 2:($5/SCALE_INCIDENCE) title "Positive Tests / Week / 100k People" with linespoints lt 4, \
+     datafile using 1:(avg7($4)/SCALE_INCIDENCE*7) title "Daily Cases / 100k People (7 day avg)" with lines lt 7 lw 2 ,\
 
 set output "./graph_tests_incidence_scaled.svg"
 # 83166711 inhabitants at 2019-12-31 according to ./other-data/bevölkerungsstand_alter_de_2019_12_31.csv
 set title "PCR Tests Per Week Per 100k (83.17 Mio Inhab)"
 plot [][0:300]  avg7_sum = init7(0) \
-     './data-tests.csv' using 2:($4/831.66711) title "Tests / Week / 100k People " with linespoints lt 3 , \
-     './data-tests.csv' using 2:($5/831.66711) title "Positive Tests / Week / 100k People" with linespoints lt 4, \
-     datafile using 1:(avg7($4)/831.66711*7) title "Daily Cases / 100k People (7 day avg)" with lines lt 7 lw 2 ,\
+     './data-tests.csv' using 2:($4/SCALE_INCIDENCE) title "Tests / Week / 100k People " with linespoints lt 3 , \
+     './data-tests.csv' using 2:($5/SCALE_INCIDENCE) title "Positive Tests / Week / 100k People" with linespoints lt 4, \
+     datafile using 1:(avg7($4)/SCALE_INCIDENCE*7) title "Daily Cases / 100k People (7 day avg)" with lines lt 7 lw 2 ,\
 
 
 set output "./graph_icu_load_DEUTSCHLAND.svg"
