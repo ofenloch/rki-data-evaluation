@@ -1,0 +1,149 @@
+Server;SQLProd31;
+Stand: 19.04.2021 05:59:55;Windows;TRUE
+;Passwort;
+;SurvNet3RKI2;
+ConfigStr;"ODBC;DRIVER=ODBC Driver 13 for SQL Server;SERVER=SQLProd31;Trusted_Connection=yes;APP=Excel;WSID=WS;DATABASE=SurvNet3RKI2";
+
+AAA;;
+BBB;;
+CCC;;
+
+Tageswerte berechnet.Tageswerte berechnet001;"select_x000D_
+Bundesland,_x000D_
+Fälle_7_Tage as 	'Fälle in den letzten 7 Tagen',_x000D_
+Fälle_7_Tage/Bev * 100000 as '7-Tage-Inzidenz'_x000D_
+from_x000D_
+(select Cast(""[DeutschlandNodes].[Federal2016].[Federal2016].[MEMBER_CAPTION]"" as VARCHAR) as Bundesland, _x000D_
+cast(""[Measures].[Population]"" as float) as Bev_x000D_
+FROM   Openquery(OLAP_SESQL19_CUBE4COVID19,_x000D_
+'_x000D_
+select _x000D_
+[Measures].[Population] on 0,_x000D_
+[DeutschlandNodes].[Federal2016].[Federal2016]-[DeutschlandNodes].[Federal2016].&[-- Deutschland angegeben]- [DeutschlandNodes].[Federal2016].&[Unbekannt]_x000D_
+ _x000D_
+   on 1_x000D_
+FROM Cube4SurvNet_x000D_
+where ([Datenstand].[Publikation].&[-1],_x000D_
+[ReportingDate].[WeekYear].[WeekYear].&[2020]_x000D_
+_x000D_
+)_x000D_
+')) X _x000D_
+_x000D_
+	left join_x000D_
+_x000D_
+(Select MeldeLandkreisBundesland, count(*) as 'Fälle_7_Tage'_x000D_
+	from_x000D_
+	(Select IdRecord,MeldeLandkreisBundesland, Meldedatum_x000D_
+	From [SurvNet3Admin].[Covid].[CVDCases]_x000D_
+Where Datenstand='Stand'+Convert(varchar(50),getdate(),112)+'T0000' _x000D_
+and Referenzdefinition='Ja'_x000D_
+	and Meldedatum between CONVERT( date, GETDATE()-7 ) and CONVERT( date, GETDATE()-1 )) A3_x000D_
+	group by MeldeLandkreisBundesland) B3_x000D_
+on Bundesland=B3.MeldeLandkreisBundesland_x000D_
+order by Bundesland_x000D_
+_x000D_
+_x000D_
+";
+Tageswerte berechnet.Tageswerte berechnet002;"select _x000D_
+format(getdate(),'dd.MM.yyyy') as Berichtsdatum,_x000D_
+count(*) as 'Fälle gesamt',_x000D_
+'',_x000D_
+'',_x000D_
+sum(case when GenesenStatus='verstorben' then 1 else 0 end) as 'Todesfälle'_x000D_
+from _x000D_
+(Select IdRecord,GenesenStatus_x000D_
+	From [SurvNet3Admin].[Covid].[CVDCases]_x000D_
+Where Datenstand='Stand'+Convert(varchar(50),getdate(),112)+'T0000' _x000D_
+and Referenzdefinition='Ja') A_x000D_
+";
+Tageswerte berechnet.Tageswerte berechnet003;"select cast(""[Measures].[Population]"" as float) as Bev_x000D_
+FROM   Openquery(OLAP_SESQL19_CUBE4COVID19,_x000D_
+'_x000D_
+select _x000D_
+{[Measures].[Population]} on 0_x000D_
+FROM Cube4SurvNet_x000D_
+where ([Datenstand].[Publikation].&[-1],_x000D_
+[ReportingDate].[WeekYear].[WeekYear].&[2020]_x000D_
+)_x000D_
+')";
+7Tage_LK.7Tage_LK001;exec SurvNet3Admin.[Covid].[p7Tage_LK] ;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
