@@ -92,6 +92,14 @@ shift7(x) = (avg7_back7 = avg7_back6, avg7_back6 = avg7_back5, avg7_back5 = avg7
 init7(x) = (avg7_back7 = avg7_back6 = avg7_back5 = avg7_back4 = avg7_back3 = avg7_back2 = avg7_back1 = avg7_sum = 0)
 
 
+# found this on stackoverflow https://stackoverflow.com/a/11902907
+delta_v(x) = ( vD = x - old_v, old_v = x, vD )
+old_v = NaN
+# do something like 
+#  plot 'delta.dat' using 0:($1) title 'Values' with points, \
+#       '' using 0:(delta_v($1)) title 'Delta' with linespoints
+
+
 # Umrechnung absolut -> Inzidenz
 # 83166711 Einwohner 2019-12-31 gemäß ./other-data/bevölkerungsstand_alter_de_2019_12_31.csv
 # 20000 positive Tests entsprechen 20000/SCALE_INCIDENCE=24.048 positiven Tests pro 100000 Einwohner
@@ -197,6 +205,12 @@ plot [][0:] avg7_sum = init7(0) \
      './data-tests.csv' using 2:($5/7) title "Positive Tests (7 day avg)" with linespoints lt 4, \
      './data-clinical.csv' using 1:12 title "Hospitalized COVID-19 Patients" with linespoints lt 12, \
 
+
+
+set output "./graph_icu_admissions.svg"
+set title "Daily COVID-19 Admissions to ICU"
+plot 0 notitle with lines lt 0, \
+     './data-divi-DEUTSCHLAND.csv' using 1:(delta_v($4)) title 'Admmissions' with linespoints
 
 
 
