@@ -120,13 +120,13 @@ plot './data-cases.csv' using 1:2 title "Cumulative Cases" with lines lt 3 lw 1 
 
 set output "./graph_daily_cases.svg"
 set title "Daily Cases"
-plot avg7_sum = init7(0) \
+plot avg7_sum = init7(0), \
      './data-cases.csv' using 1:4 title "Daily Cases" with lines lt 3 lw 1, \
      './data-cases.csv' using 1:(avg7($4)) title "Daily Cases (7 day avg)" with lines lt 7 lw 2
 
 set output "./graph_daily_cases_vs_tests.svg"
 set title "Daily Cases"
-plot avg7_sum = init7(0) \
+plot avg7_sum = init7(0), \
      './data-cases.csv' using 1:4 title "Daily Cases" with lines lt 3 lw 1, \
      './data-cases.csv' using 1:(avg7($4)) title "Daily Cases (7 day avg)" with lines lt 7 lw 2 ,\
      './data-tests.csv' using 2:($5/7) title "Daily Positive Tests (7 day avg)" with linespoints lt 0 lw 2
@@ -136,14 +136,14 @@ plot avg7_sum = init7(0) \
 
 set output "./graph_r_4_days.svg"
 set title "4 Day R"
-plot avg7_sum = init7(0) \
+plot avg7_sum = init7(0), \
      1 notitle lt -1 lw 1, \
      './data-nowcasting.csv' using 1:8 title "4 Day R" with lines lt 3 lw 1, \
      './data-nowcasting.csv' using 1:(avg7($8)) title "4 Day R (7 day avg)" with lines lt 7 lw 2
 
 set output "./graph_r_7_days.svg"
 set title "7 Day R"
-plot avg7_sum = init7(0) \
+plot avg7_sum = init7(0), \
      1 notitle lt -1 lw 1, \
      './data-nowcasting.csv' using 1:11 title "7 Day R" with lines lt 3 lw 1, \
      './data-nowcasting.csv' using 1:(avg7($11)) title "7 Day R (7 day avg)" with lines lt 7 lw 2
@@ -165,7 +165,7 @@ plot './data-tests.csv' using 2:4 title "Total Nr of Tests Per Week" with linesp
 set output "./graph_tests_incidence.svg"
 # 83166711 inhabitants at 2019-12-31 according to ./other-data/bevölkerungsstand_alter_de_2019_12_31.csv
 set title "PCR Tests Per Week Per 100k (83.17 Mio Inhab)"
-plot avg7_sum = init7(0) \
+plot avg7_sum = init7(0), \
      './data-tests.csv' using 2:($4/SCALE_INCIDENCE) title "Tests / Week / 100k People " with linespoints lt 3 , \
      './data-tests.csv' using 2:($5/SCALE_INCIDENCE) title "Positive Tests / Week / 100k People" with linespoints lt 4, \
      './data-nowcasting.csv' using 1:(avg7($4)/SCALE_INCIDENCE*7) title "Daily Cases / 100k People (7 day avg)" with lines lt 7 lw 2 ,\
@@ -173,7 +173,7 @@ plot avg7_sum = init7(0) \
 set output "./graph_tests_incidence_scaled.svg"
 # 83166711 inhabitants at 2019-12-31 according to ./other-data/bevölkerungsstand_alter_de_2019_12_31.csv
 set title "PCR Tests Per Week Per 100k (83.17 Mio Inhab)"
-plot [][0:300]  avg7_sum = init7(0) \
+plot [][0:300]  avg7_sum = init7(0), \
      './data-tests.csv' using 2:($4/SCALE_INCIDENCE) title "Tests / Week / 100k People " with linespoints lt 3 , \
      './data-tests.csv' using 2:($5/SCALE_INCIDENCE) title "Positive Tests / Week / 100k People" with linespoints lt 4, \
      './data-nowcasting.csv' using 1:(avg7($4)/SCALE_INCIDENCE*7) title "Daily Cases / 100k People (7 day avg)" with lines lt 7 lw 2 ,\
@@ -198,7 +198,7 @@ plot './data-divi-BADEN_WUERTTEMBERG.csv' using 1:6 title "Free ICU Beds" with l
 
 set output "./graph_correlations.svg"
 set title "Correlations"
-plot [][0:] avg7_sum = init7(0) \
+plot [][0:] avg7_sum = init7(0), \
      './data-cases.csv' using 1:(avg7($4)) title "Daily Cases (7 day avg)" with lines lt 7 lw 2, \
      './data-divi-DEUTSCHLAND.csv' using 1:4 title "COVID-19 ICU Patients" with lines, \
      './data-cases.csv' using 1:6 title "Daily COVID-19 Deaths" with lines ,\
