@@ -93,8 +93,8 @@ init7(x) = (avg7_back7 = avg7_back6 = avg7_back5 = avg7_back4 = avg7_back3 = avg
 
 
 # found this on stackoverflow https://stackoverflow.com/a/11902907
-delta_v(x) = ( vD = x - old_v, old_v = x, vD )
-old_v = NaN
+delta_v(x) = ( delta_vD = x - delta_old_v, delta_old_v = x, delta_vD )
+delta_old_v = NaN
 # do something like 
 #  plot 'delta.dat' using 0:($1) title 'Values' with points, \
 #       '' using 0:(delta_v($1)) title 'Delta' with linespoints
