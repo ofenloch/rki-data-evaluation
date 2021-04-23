@@ -198,6 +198,7 @@ plot './data-divi-BADEN_WUERTTEMBERG.csv' using 1:6 title "Free ICU Beds" with l
 
 set output "./graph_correlations.svg"
 set title "Correlations"
+# need to restrict plot to [0:] because daily deaths of 2020-08-02 is -7
 plot [][0:] avg7_sum = init7(0), \
      './data-cases.csv' using 1:(avg7($4)) title "Daily Cases (7 day avg)" with lines lt 7 lw 2, \
      './data-divi-DEUTSCHLAND.csv' using 1:4 title "COVID-19 ICU Patients" with lines, \
