@@ -3,14 +3,14 @@
 #
 # use sed to format the data file
 #
-sed -f ./sed-cases ./rki-data/RKI-Fallzahlen_Kum_Tab-csv/Fälle-Todesfälle-gesamt.csv > ./data-cases.csv
-sed -f ./sed-nowcasting ./rki-data/RKI-Nowcasting_Zahlen-csv/Nowcast_R.csv > ./data-nowcasting.csv
+sed -f ./sed-cases ./rki-data/RKI-Fallzahlen_Kum_Tab-csv/Fälle-Todesfälle-gesamt.csv > ./my-data/data-cases.csv
+sed -f ./sed-nowcasting ./rki-data/RKI-Nowcasting_Zahlen-csv/Nowcast_R.csv > ./my-data/data-nowcasting.csv
 # we would do this:
-#   sed -f ./sed-tests ./rki-data/RKI-Testzahlen-gesamt-csv/1_Testzahlerfassung.csv > ./data-tests.csv
+#   sed -f ./sed-tests ./rki-data/RKI-Testzahlen-gesamt-csv/1_Testzahlerfassung.csv > ./my-data/data-tests.csv
 # but we have to convert the weeknr/year to proper date ranges for plotting (e.g. "50 2020" to  "2020-12-14;2020-12-20")
 # so we read the file ./rki-data/RKI-Testzahlen-gesamt-csv/1_Testzahlerfassung.csv line by line and
 # process each line and use the funtion iso_week_num_to_date() on the first coumn
-# the result is file ./data-tests.csv.tmp which is then processed with sed
+# the result is file ./my-data/data-tests.csv.tmp which is then processed with sed
 
 
 # The data about the PCR tests is only given per week. I assume, RKI uses ISO week numbers for this information:
@@ -66,8 +66,8 @@ function iso_week_num_to_date() {
 } # function iso_week_num_to_date() {
 
 function format_test_data() {
-    # delete the temporary file ./data-tests.csv.tmp:
-    /bin/rm -f ./data-tests.csv.tmp
+    # delete the temporary file ./my-data/data-tests.csv.tmp:
+    /bin/rm -f ./mydata/data-tests.csv.tmp
     # initialize the line counter:
     n=1
     # Set semicolon as the delimiter:
@@ -105,23 +105,23 @@ function format_test_data() {
         firstnew=$(iso_week_num_to_date ${weeknr} ${year})
         if [[ ${#first} > 5 ]] ; then
             # we should have a valid  week number and a valid date range
-            echo -n "${firstnew};" >> ./data-tests.csv.tmp
+            echo -n "${firstnew};" >> ./my-data/data-tests.csv.tmp
         else
             # no valid week number
-            echo -n ";;" >> ./data-tests.csv.tmp
+            echo -n ";;" >> ./my-data/data-tests.csv.tmp
         fi
         # simply append the original line
-        echo "${line}" >> ./data-tests.csv.tmp
+        echo "${line}" >> ./my-data/data-tests.csv.tmp
         # declare -p array
     done < ./rki-data/RKI-Testzahlen-gesamt-csv/1_Testzahlerfassung.csv
-    sed -f ./sed-tests ./data-tests.csv.tmp > ./data-tests.csv
-    /bin/rm -f ./data-tests.csv.tmp
+    sed -f ./sed-tests ./my-data/data-tests.csv.tmp > ./my-data/data-tests.csv
+    /bin/rm -f ./my-data/data-tests.csv.tmp
 } # function format_test_data() {
 
 
 function format_clinical_data() {
-    # delete the temporary file ./data-tests.csv.tmp:
-    /bin/rm -f ./data-clinical.csv.tmp
+    # delete the temporary file ./my-data/data-clinical.csv.tmp:
+    /bin/rm -f ./my-data/data-clinical.csv.tmp
     # initialize the line counter:
     n=1
     # Set semicolon as the delimiter:
@@ -151,13 +151,13 @@ function format_clinical_data() {
             # we should have a valid  week number and a valid date range
             firstnew=$(iso_week_num_to_date ${weeknr} ${year})
         fi 
-        echo -n "${firstnew};" >> ./data-clinical.csv.tmp
+        echo -n "${firstnew};" >> ./my-data/data-clinical.csv.tmp
         # simply append the original line
-        echo "${line}" >> ./data-clinical.csv.tmp
+        echo "${line}" >> ./my-data/data-clinical.csv.tmp
         # declare -p array
     done < ./rki-data/RKI-Klinische-Aspekte-csv/Klinische_Aspekte.csv
-    sed -f ./sed-clinical ./data-clinical.csv.tmp > ./data-clinical.csv
-    /bin/rm -f ./data-clinical.csv.tmp
+    sed -f ./sed-clinical ./my-data/data-clinical.csv.tmp > ./my-data/data-clinical.csv
+    /bin/rm -f ./my-data/data-clinical.csv.tmp
 } # function format_clinical_data() {
 
 
@@ -169,9 +169,9 @@ format_clinical_data
 for f in DEUTSCHLAND HAMBURG THUERINGEN SCHLESWIG_HOLSTEIN SACHSEN BADEN_WUERTTEMBERG SACHSEN_ANHALT BAYERN BERLIN MECKLENBURG_VORPOMMERN BREMEN NIEDERSACHSEN RHEINLAND_PFALZ SAARLAND NORDRHEIN_WESTFALEN HESSEN BRANDENBURG; do
     echo "creating DIVI data for ${f} ..."
     /bin/rm -f ./data-divi-${f}.csv.tmp
-    /usr/bin/head -1 rki-data/bundesland-zeitreihe.csv > ./data-divi-${f}.csv.tmp
-    /usr/bin/grep ${f} rki-data/bundesland-zeitreihe.csv >> ./data-divi-${f}.csv.tmp
-    /usr/bin/sed -f ./sed-divi ./data-divi-${f}.csv.tmp > ./data-divi-${f}.csv
+    /usr/bin/head -1 rki-data/bundesland-zeitreihe.csv > ./my-data/data-divi-${f}.csv.tmp
+    /usr/bin/grep ${f} rki-data/bundesland-zeitreihe.csv >> ./my-data/data-divi-${f}.csv.tmp
+    /usr/bin/sed -f ./sed-divi ./data-divi-${f}.csv.tmp > ./my-data/data-divi-${f}.csv
     /bin/rm -f ./data-divi-${f}.csv.tmp
 done
 

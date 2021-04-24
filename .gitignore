@@ -1,5 +1,5 @@
 *.svg
-data-tests.csv.tmp
+*.csv.tmp
 rki-data/wget-rki.log
 getRKIData.sh.cron.log
 data-divi-*.csv
