@@ -1,4 +1,6 @@
+# My Evaluation of RKI's COVID-19 Data
 
+![My Evaluation of RKI's COVID-19 Data](./graph_clinical_data.svg "Clinical Data")
 
 ## Daily **download** of RKI Excel file via cron with bash script **getRKIData.sh**
 
