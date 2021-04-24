@@ -210,15 +210,18 @@ plot [][0:] avg7_sum = init7(0), \
 
 set output "./graph_clinical_data.svg"
 set title "Clinical Data"
-plot avg7_sum = init7(0), \
+# need to restrict plot to [0:] because daily deaths of 2020-08-02 is -7
+plot [][0:] avg7_sum = init7(0), \
      0 notitle lt -1 lw 1, \
      './data-divi-DEUTSCHLAND.csv' using 1:(delta_v($4)) title 'COVID-19 ICU Admmissions' with lines, \
      './data-divi-DEUTSCHLAND.csv' using 1:4 title "COVID-19 ICU Patients" with lines, \
      './data-clinical.csv' using 1:12 title "Hospitalized COVID-19 Patients" with lines, \
-     './data-cases.csv' using 1:6 title "Daily COVID-19 Deaths" with lines
+     './data-cases.csv' using 1:6 title "Daily COVID-19 Deaths" with lines, \
+     './data-divi-DEUTSCHLAND.csv' using 1:4 title "COVID-19 ICU Patients" with lines, \
+     './data-tests.csv' using 2:($5/7) title "Daily Positive Tests (7 day avg)" with lines lt 7 lw 2
      #, \
      #'./data-cases.csv' using 1:(avg7($6)) title "Daily COVID-19 Deaths (7 day avg)" with lines
-     
+
 
 
 
