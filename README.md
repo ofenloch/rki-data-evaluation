@@ -2,6 +2,8 @@
 
 ![My Evaluation of RKI's COVID-19 Data](./graph_clinical_data.svg "Clinical Data")
 
+For convenience, there's an **index.html** showing the generated plots. I use VS Code Extension 
+[Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) to check the plots in a browser.
 ## Daily **download** of RKI Excel file via cron with bash script **getRKIData.sh**
 
     # every day at 05:03 download Corona data from RKI
@@ -10,7 +12,8 @@
 ## Plot Generation
 
 The script **plot-data.sh** processes the extracted CSV file and generates the plots. The script does all the 
-things that are described in mor detail below.
+things that are described in more detail below.
+
 
 ## The data in the Excel files is **extracted into CSV** file by
 
@@ -36,7 +39,6 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation/rki-data$ 
 ```
-
 
 The sheet names change sometimes. Sometimes new sheets are added.
 
