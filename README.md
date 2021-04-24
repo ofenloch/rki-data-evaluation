@@ -1,26 +1,16 @@
 
 
-Daily download of RKI Excel file via cron:
+## Daily **download** of RKI Excel file via cron with bash script **getRKIData.sh**
 
-    # every day at 13:35 download Corona data from RKI
-    35 13  *   *   *     cd /data/sdb1/home/ofenloch/workspaces/COVID19/rki-eval/ && /data/sdb1/home/ofenloch/workspaces/COVID19/rki-eval/getRKIData.sh 2>&1 | tee -a /data/sdb1/home/ofenloch/workspaces/COVID19/rki-eval/getRKIData.sh.cron.log
+    # every day at 05:03 download Corona data from RKI
+    03 05  *   *   *     /home/ofenloch/workspaces/COVID19/rki-data-evaluation/getRKIData.sh 2>&1 | tee -a /home/ofenloch/workspaces/COVID19/rki-data-evaluation/getRKIData.sh.cron.log 2>&1
 
+## Plot Generation
 
-The files are copied into this directory with
+The script **plot-data.sh** processes the extracted CSV file and generates the plots. The script does all the 
+things that are described in mor detail below.
 
-```bash
-ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation/rki-data$ for f in ~/workspaces/COVID19/rki-eval/rki-data/*2021-01-30--13-35-01*.xlsx ; do /bin/cp -pvf ${f} $(basename ${f} -2021-01-30--13-35-01.xlsx).xlsx ; done
-'/home/ofenloch/workspaces/COVID19/rki-eval/rki-data/RKI-Altersverteilung-2021-01-30--13-35-01.xlsx' -> 'RKI-Altersverteilung.xlsx'
-'/home/ofenloch/workspaces/COVID19/rki-eval/rki-data/RKI-COVID-19_Todesfaelle-2021-01-30--13-35-01.xlsx' -> 'RKI-COVID-19_Todesfaelle.xlsx'
-'/home/ofenloch/workspaces/COVID19/rki-eval/rki-data/RKI-Fallzahlen_Kum_Tab-2021-01-30--13-35-01.xlsx' -> 'RKI-Fallzahlen_Kum_Tab.xlsx'
-'/home/ofenloch/workspaces/COVID19/rki-eval/rki-data/RKI-Nowcasting_Zahlen-2021-01-30--13-35-01.xlsx' -> 'RKI-Nowcasting_Zahlen.xlsx'
-'/home/ofenloch/workspaces/COVID19/rki-eval/rki-data/RKI-Testzahlen-gesamt-2021-01-30--13-35-01.xlsx' -> 'RKI-Testzahlen-gesamt.xlsx'
-ofenloch@teben:~/workspaces/COVID19/rki-data-evaluation/rki-data$ 
-```
-
-
-
-The data in the Excel files is extracted into CSV file by
+## The data in the Excel files is **extracted into CSV** file by
 
     xlsx2csv --all --delimiter ";" --dateformat %Y-%m-%d FileName.xlsx FileName-csv
 
@@ -120,4 +110,8 @@ So, we use this
     So  5 12 19 26        3 10 17 24 31     7 14 21 28        5 12 19 26      
        35 36 37 38 39    39 40 41 42 43    44 45 46 47 48    48 49 50 51 52   
     ofenloch@teben:~/workspaces/COVID19/rki-eval/rki-data$ 
+
+## Plotting with GnuPlot
+
+The **Gnuplot command file** is **plot-data.plt**
 
