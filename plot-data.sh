@@ -168,10 +168,10 @@ format_clinical_data
 # The DIVI data comes in one file for all German states. So, we split it up:
 for f in DEUTSCHLAND HAMBURG THUERINGEN SCHLESWIG_HOLSTEIN SACHSEN BADEN_WUERTTEMBERG SACHSEN_ANHALT BAYERN BERLIN MECKLENBURG_VORPOMMERN BREMEN NIEDERSACHSEN RHEINLAND_PFALZ SAARLAND NORDRHEIN_WESTFALEN HESSEN BRANDENBURG; do
     echo "creating DIVI data for ${f} ..."
-    /bin/rm -f ./data-divi-${f}.csv.tmp
-    /usr/bin/head -1 rki-data/bundesland-zeitreihe.csv > ./my-data/data-divi-${f}.csv.tmp
-    /usr/bin/grep ${f} rki-data/bundesland-zeitreihe.csv >> ./my-data/data-divi-${f}.csv.tmp
-    /usr/bin/sed -f ./sed-divi ./data-divi-${f}.csv.tmp > ./my-data/data-divi-${f}.csv
+    /bin/rm -f ./my-data/data-divi-${f}.csv.tmp
+    /usr/bin/head -1 ./rki-data/bundesland-zeitreihe.csv > ./my-data/data-divi-${f}.csv.tmp
+    /usr/bin/grep ${f} ./rki-data/bundesland-zeitreihe.csv >> ./my-data/data-divi-${f}.csv.tmp
+    /usr/bin/sed -f ./sed-divi ./my-data/data-divi-${f}.csv.tmp > ./my-data/data-divi-${f}.csv
     /bin/rm -f ./data-divi-${f}.csv.tmp
 done
 
