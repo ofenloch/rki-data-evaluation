@@ -1,6 +1,6 @@
 # My Evaluation of RKI's COVID-19 Data
 
-![My Evaluation of RKI's COVID-19 Data](./rki-data-evaluation.png "Clinical Data")
+![My Evaluation of RKI's COVID-19 Data](./plots/rki-data-evaluation.png "Clinical Data")
 
 My personal oppinion is that we should not take the "7-Tage-Inzidenz" as criterion for [NPI](https://en.wikipedia.org/wiki/Non-pharmaceutical_intervention_(epidemiology)) but a combination of ICU admission rate and hospaitalization rate: Check out the plot with the [clinical data](https://github.com/ofenloch/rki-data-evaluation/blob/main/graph_clinical_data.svg).
 
