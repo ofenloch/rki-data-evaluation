@@ -225,7 +225,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 		L545.3,165.1 L546.4,164.6 L547.4,167.8 L548.5,174.4 L549.6,176.2 L550.6,179.8 L551.7,189.6 L552.8,194.8
 		L553.8,190.0 L554.9,182.1 L556.0,174.5 L557.0,168.2 L558.1,163.0 L559.2,147.0 L560.2,134.9 L561.3,134.5
 		L562.4,134.8 L563.4,133.1 L564.5,135.5 L565.6,137.1 L566.6,132.8 L567.7,132.7 L568.8,130.4 L569.8,131.0
-		 '/></g>
+		L570.9,131.5  '/></g>
 	</g>
 	<g id="array_1_plot_2" ><title>COVID-19 ICU Patients</title>
 <g fill="none" color="white" stroke="rgb(229,  30,  16)" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -288,7 +288,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 		L544.2,290.8 L545.3,290.3 L546.4,289.2 L547.4,288.6 L548.5,287.2 L549.6,286.3 L550.6,284.5 L551.7,283.7
 		L552.8,283.4 L553.8,283.0 L554.9,282.9 L556.0,282.4 L557.0,281.7 L558.1,281.4 L559.2,281.6 L560.2,281.5
 		L561.3,281.0 L562.4,280.6 L563.4,280.0 L564.5,279.2 L565.6,278.8 L566.6,278.6 L567.7,278.0 L568.8,278.0
-		L569.8,278.3  '/></g>
+		L569.8,278.3 L570.9,278.0  '/></g>
 	</g>
 	<g id="array_1_plot_3" ><title>Daily COVID-19 Deaths</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -350,7 +350,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 		L540.0,323.5 L541.0,324.2 L542.1,324.6 L543.2,323.3 L544.2,322.7 L545.3,323.1 L546.4,322.8 L547.4,323.9
 		L548.5,324.4 L549.6,324.5 L550.6,324.2 L551.7,322.2 L552.8,322.1 L553.8,322.2 L554.9,322.7 L556.0,324.0
 		L557.0,324.1 L558.1,322.3 L559.2,321.8 L560.2,322.3 L561.3,322.7 L562.4,323.0 L563.4,324.4 L564.5,324.1
-		L565.6,322.2 L566.6,321.9 L567.7,322.6 L568.8,322.5 L569.8,322.3  '/></g>
+		L565.6,322.2 L566.6,321.9 L567.7,322.6 L568.8,322.5 L569.8,322.3 L570.9,323.9  '/></g>
 	</g>
 	<g id="array_1_plot_4" ><title>Positive Tests (7 day avg)</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">

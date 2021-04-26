@@ -228,7 +228,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 		L545.3,135.3 L546.4,155.6 L547.4,187.3 L548.5,237.2 L549.6,268.4 L550.6,282.0 L551.7,258.5 L552.8,168.1
 		L553.8,125.4 L554.9,137.0 L556.0,189.6 L557.0,228.4 L558.1,248.9 L559.2,157.2 L560.2,92.1 L561.3,122.4
 		L562.4,139.4 L563.4,178.4 L564.5,243.6 L565.6,259.0 L566.6,130.3 L567.7,91.3 L568.8,107.9 L569.8,142.9
-		 '/></g>
+		L570.9,181.8  '/></g>
 	</g>
 	<g id="array_1_plot_2" ><title>Daily Cases (7 day avg)</title>
 <g fill="none" color="white" stroke="rgb( 86, 180, 233)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -294,7 +294,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 		L545.3,195.6 L546.4,195.2 L547.4,198.0 L548.5,204.0 L549.6,205.7 L550.6,208.9 L551.7,217.7 L552.8,222.4
 		L553.8,218.1 L554.9,210.9 L556.0,204.1 L557.0,198.4 L558.1,193.7 L559.2,179.2 L560.2,168.4 L561.3,167.9
 		L562.4,168.3 L563.4,166.7 L564.5,168.9 L565.6,170.3 L566.6,166.5 L567.7,166.3 L568.8,164.3 L569.8,164.8
-		 '/></g>
+		L570.9,165.3  '/></g>
 	</g>
 	<g id="array_1_plot_3" ><title>Daily Positive Tests (7 day avg)</title>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
