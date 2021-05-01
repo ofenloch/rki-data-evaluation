@@ -1,0 +1,21 @@
+Allgemeine Erläuterungen
+Stand: 30.04.2021 06:48:27
+Auf der Internetseite: www.rki.de/inzidenzen veröffentlicht das Robert Koch-Institut gemäß § 28b IfSG für alle Landkreise und kreisfreien Städte fortlaufend die 7-Tage-Inzidenz.
+""
+Diese Exceldatei wird täglich aktualisiert und enthält folgende Daten:
+""
+# aktuelle 7-Tage-Fallzahlen und -Inzidenzen nach Bundesländern und Kreisen,
+# Zahl der pro Tag ans RKI übermittelten Fälle und Todesfälle nach Eingang am RKI (seit Februar 2020),
+# Archiv der 7-Tage-Fallzahlen und -Inzidenzen nach Bundesländern (seit Mai 2020) und Kreisen (seit November 2020).
+
+"Bei den 7-Tage-Fallzahlen und -Inzidenzen für frühere Tage muss berücksichtigt werden, dass es sich um die jeweils an dem angegebenen Tag berichteten Werte handelt, die nicht durch an Folgetagen nachübermittelte Fälle aktualisiert werden (für den Berichtstag ""eingefrorene"" Werte)."
+
+Link: https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Fallzahlen_Kum_Tab.html
+
+Erläuterung zur Berechnung der 7-Tage-Inzidenz
+
+"Für die Berechnung der Inzidenzen werden die Daten der Bevölkerungsstatistik des Statistischen Bundesamtes mit Datenstand 31.12.2019 verwendet.
+"
+Die Berechnung der 7-Tage-Inzidenz erfolgt für die an das RKI übermittelten Fälle auf Basis des Meldedatums, also dem Datum, an dem das lokale Gesundheitsamt Kenntnis über den Fall erlangt und ihn elektronisch erfasst hat. 
+Für die heutige 7-Tage-Inzidenz werden die Fälle mit Meldedatum der letzten 7 Tage gezählt.
+"Siehe hierzu auch die FAQ ""Wie funktioniert der Meldeweg und welche Informationen zu den Erkrankten werden ans RKI übermittelt?"" und ""Wie entsteht die Diskrepanz zwischen Inzidenzen der Landkreise und den Angaben des RKI-Dashboards?"" unter www.rki.de/covid-19-faq > Fallzahlen und Meldungen."
