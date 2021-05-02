@@ -1,417 +1,417 @@
 
-Stand: 30.04.2021 06:48:27;;;
+Stand: 01.05.2021 08:41:08;;;
 
 
 Landkreis;LKNR;Anzahl;Inzidenz
-StadtRegion Aachen;05334;898;161.2
-LK Ahrweiler;07131;168;129.1
-LK Aichach-Friedberg;09771;185;137.4
-LK Alb-Donau-Kreis;08425;406;206.0
-LK Altenburger Land;16077;192;214.8
-LK Altenkirchen;07132;183;142.1
-LK Altmarkkreis Salzwedel;15081;117;140.7
-LK Altötting;09171;208;186.5
-LK Alzey-Worms;07331;153;118.0
-SK Amberg;09361;60;142.2
-LK Amberg-Sulzbach;09371;96;93.2
-LK Ammerland;03451;121;96.9
-LK Anhalt-Bitterfeld;15082;240;151.4
-SK Ansbach;09561;62;148.3
-LK Ansbach;09571;278;150.6
-SK Aschaffenburg;09661;124;174.6
-LK Aschaffenburg;09671;196;112.5
-SK Augsburg;09761;627;211.4
-LK Augsburg;09772;454;179.1
-LK Aurich;03452;94;49.6
-LK Bad Dürkheim;07332;129;97.2
-LK Bad Kissingen;09672;173;167.6
-LK Bad Kreuznach;07133;240;151.6
-LK Bad Tölz-Wolfratshausen;09173;204;159.5
-SK Baden-Baden;08211;86;155.8
-SK Bamberg;09461;71;91.8
-LK Bamberg;09471;227;154.3
-LK Barnim;12060;141;76.1
-LK Bautzen;14625;795;265.2
-SK Bayreuth;09462;83;111.0
-LK Bayreuth;09472;110;106.1
-LK Berchtesgadener Land;09172;149;140.7
-LK Bergstraße;06431;437;161.6
-SK Berlin Charlottenburg-Wilmersdorf;11004;445;133.1
-SK Berlin Friedrichshain-Kreuzberg;11002;335;118.8
-SK Berlin Lichtenberg;11011;320;111.7
-SK Berlin Marzahn-Hellersdorf;11010;330;125.5
-SK Berlin Mitte;11001;569;151.6
-SK Berlin Neukölln;11008;520;161.9
-SK Berlin Pankow;11003;318;79.9
-SK Berlin Reinickendorf;11012;390;150.2
-SK Berlin Spandau;11005;441;184.5
-SK Berlin Steglitz-Zehlendorf;11006;271;89.7
-SK Berlin Tempelhof-Schöneberg;11007;447;130.8
-SK Berlin Treptow-Köpenick;11009;240;90.1
-LK Bernkastel-Wittlich;07231;151;134.2
-LK Biberach;08426;482;239.5
-SK Bielefeld;05711;585;175.0
-LK Birkenfeld;07134;132;163.1
-LK Bitburg-Prüm;07232;134;135.3
-LK Böblingen;08115;657;167.3
-SK Bochum;05911;558;152.6
-LK Bodenseekreis;08435;367;168.8
-SK Bonn;05314;555;168.3
-LK Börde;15083;241;141.0
-LK Borken;05554;478;128.7
-SK Bottrop;05512;144;122.5
-SK Brandenburg a.d.Havel;12051;87;120.5
-SK Braunschweig;03101;257;103.0
-LK Breisgau-Hochschwarzwald;08315;159;60.3
-SK Bremen;04011;789;139.0
-SK Bremerhaven;04012;156;137.3
-LK Burgenlandkreis;15084;401;224.2
-LK Calw;08235;378;237.4
-LK Celle;03351;165;92.2
-LK Cham;09372;270;210.9
-SK Chemnitz;14511;698;283.4
-LK Cloppenburg;03453;232;135.9
-SK Coburg;09463;100;243.5
-LK Coburg;09473;207;238.6
-LK Cochem-Zell;07135;23;37.5
-LK Coesfeld;05558;187;84.8
-SK Cottbus;12052;157;157.5
-LK Cuxhaven;03352;114;57.6
-LK Dachau;09174;225;145.3
-LK Dahme-Spreewald;12061;193;113.0
-SK Darmstadt;06411;227;142.0
-LK Darmstadt-Dieburg;06432;334;112.1
-LK Deggendorf;09271;289;241.9
-SK Delmenhorst;03401;146;188.2
-SK Dessau-Roßlau;15001;111;138.6
-LK Diepholz;03251;217;100.0
-LK Dillingen a.d.Donau;09773;144;149.1
-LK Dingolfing-Landau;09279;251;259.6
-LK Dithmarschen;01051;77;57.8
-LK Donau-Ries;09779;254;189.9
-LK Donnersbergkreis;07333;132;175.2
-SK Dortmund;05913;1169;198.7
-SK Dresden;14612;751;134.9
-SK Duisburg;05112;957;191.9
-LK Düren;05358;533;201.4
-SK Düsseldorf;05111;930;149.5
-LK Ebersberg;09175;228;158.7
-LK Eichsfeld;16061;143;143.0
-LK Eichstätt;09176;164;123.4
-SK Eisenach;16056;64;151.5
-LK Elbe-Elster;12062;196;192.5
-SK Emden;03402;37;74.1
-LK Emmendingen;08316;137;82.3
-LK Emsland;03454;316;96.6
-LK Ennepe-Ruhr-Kreis;05954;447;137.9
-LK Enzkreis;08236;432;216.5
-LK Erding;09177;213;154.1
-SK Erfurt;16051;308;143.9
-SK Erlangen;09562;106;94.2
-LK Erlangen-Höchstadt;09572;180;131.1
-LK Erzgebirgskreis;14521;1186;354.1
-SK Essen;05113;980;168.2
-LK Esslingen;08116;1193;223.0
-LK Euskirchen;05366;246;127.0
-SK Flensburg;01001;45;49.9
-LK Forchheim;09474;128;110.2
-SK Frankenthal;07311;72;147.7
-SK Frankfurt (Oder);12053;94;162.8
-SK Frankfurt am Main;06412;1502;196.8
-SK Freiburg i.Breisgau;08311;209;90.4
-LK Freising;09178;265;147.2
-LK Freudenstadt;08237;264;223.3
-LK Freyung-Grafenau;09272;113;144.2
-LK Friesland;03455;34;34.4
-LK Fulda;06631;537;240.7
-LK Fürstenfeldbruck;09179;274;124.9
-SK Fürth;09563;335;260.7
-LK Fürth;09573;149;126.4
-LK Garmisch-Partenkirchen;09180;96;108.6
-SK Gelsenkirchen;05513;626;241.1
-SK Gera;16052;209;224.4
-LK Germersheim;07334;186;144.2
-LK Gießen;06531;584;215.7
-LK Gifhorn;03151;159;90.1
-LK Göppingen;08117;641;248.3
-LK Görlitz;14626;543;214.9
-LK Goslar;03153;127;93.2
-LK Gotha;16067;376;278.7
-LK Göttingen;03159;259;79.4
-LK Grafschaft Bentheim;03456;250;182.3
-LK Greiz;16076;230;236.1
-LK Groß-Gerau;06433;469;170.1
-LK Günzburg;09774;281;221.2
-LK Gütersloh;05754;654;179.2
-SK Hagen;05914;527;279.3
-SK Halle;15002;433;181.4
-SK Hamburg;02000;1723;93.3
-LK Hameln-Pyrmont;03252;94;63.3
-SK Hamm;05915;540;300.1
-Region Hannover;03241;1685;145.6
-LK Harburg;03353;197;77.4
-LK Harz;15085;463;217.1
-LK Haßberge;09674;187;221.6
-LK Havelland;12063;166;101.8
-LK Heidekreis;03358;129;91.7
-SK Heidelberg;08221;101;62.5
-LK Heidenheim;08135;350;263.6
-SK Heilbronn;08121;303;239.4
-LK Heilbronn;08125;764;221.8
-LK Heinsberg;05370;319;124.8
-LK Helmstedt;03154;61;66.8
-LK Herford;05758;430;171.6
-SK Herne;05916;400;255.7
-LK Hersfeld-Rotenburg;06632;279;231.1
-LK Herzogtum Lauenburg;01053;148;74.7
-LK Hildburghausen;16069;181;286.4
-LK Hildesheim;03254;253;91.7
-LK Hochsauerlandkreis;05958;491;189.0
-LK Hochtaunuskreis;06434;298;125.8
-SK Hof;09464;126;275.0
-LK Hof;09475;201;212.0
-LK Hohenlohekreis;08126;317;281.4
-LK Holzminden;03255;60;85.2
-LK Höxter;05762;105;74.9
-LK Ilm-Kreis;16070;319;300.2
-SK Ingolstadt;09161;256;186.3
-SK Jena;16053;161;144.6
-LK Jerichower Land;15086;105;117.2
-SK Kaiserslautern;07312;157;157.0
-LK Kaiserslautern;07335;156;147.2
-SK Karlsruhe;08212;475;152.2
-LK Karlsruhe;08215;680;152.8
-SK Kassel;06611;399;197.4
-LK Kassel;06633;366;154.6
-SK Kaufbeuren;09762;59;132.9
-LK Kelheim;09273;229;186.1
-SK Kempten;09763;140;202.5
-SK Kiel;01002;208;84.3
-LK Kitzingen;09675;100;109.7
-LK Kleve;05154;421;134.7
-SK Koblenz;07111;156;136.8
-SK Köln;05315;2106;193.6
-LK Konstanz;08335;407;142.2
-SK Krefeld;05114;457;201.0
-LK Kronach;09476;160;239.7
-LK Kulmbach;09477;110;153.7
-LK Kusel;07336;73;104.0
-LK Kyffhäuserkreis;16065;119;160.4
-LK Lahn-Dill-Kreis;06532;438;172.9
-SK Landau i.d.Pfalz;07313;65;138.6
-LK Landsberg a.Lech;09181;81;67.3
-SK Landshut;09261;106;144.4
-LK Landshut;09274;337;210.8
-LK Leer;03457;156;91.4
-SK Leipzig;14713;630;106.2
-LK Leipzig;14729;377;146.0
-SK Leverkusen;05316;384;234.5
-LK Lichtenfels;09478;159;238.1
-LK Limburg-Weilburg;06533;319;185.6
-LK Lindau;09776;64;78.1
-LK Lippe;05766;512;147.3
-LK Lörrach;08336;253;110.6
-SK Lübeck;01003;107;49.4
-LK Lüchow-Dannenberg;03354;45;93.0
-LK Ludwigsburg;08118;1070;196.2
-SK Ludwigshafen;07314;331;192.2
-LK Ludwigslust-Parchim;13076;445;210.1
-LK Lüneburg;03355;149;80.9
-SK Magdeburg;15003;269;113.2
-LK Main-Kinzig-Kreis;06435;757;180.0
-LK Main-Spessart;09677;131;103.8
-LK Main-Tauber-Kreis;08128;115;86.9
-LK Main-Taunus-Kreis;06436;341;142.9
-SK Mainz;07315;355;162.4
-LK Mainz-Bingen;07339;238;112.6
-SK Mannheim;08222;625;201.2
-LK Mansfeld-Südharz;15087;281;208.2
-LK Marburg-Biedenkopf;06534;352;142.5
-LK Märkischer Kreis;05962;843;205.5
-LK Märkisch-Oderland;12064;185;94.5
-LK Mayen-Koblenz;07137;305;142.2
+SK Gelsenkirchen;05513;575;221.5
+SK Gera;16052;282;302.8
+LK Germersheim;07334;181;140.3
+LK Gießen;06531;523;193.2
+LK Gifhorn;03151;151;85.5
+LK Göppingen;08117;639;247.5
+LK Görlitz;14626;496;196.3
+LK Goslar;03153;154;113.0
+LK Gotha;16067;381;282.4
+LK Göttingen;03159;284;87.1
+LK Grafschaft Bentheim;03456;237;172.8
+LK Greiz;16076;217;222.8
+LK Groß-Gerau;06433;454;164.7
+LK Günzburg;09774;249;196.0
+LK Gütersloh;05754;614;168.2
+SK Hagen;05914;473;250.7
+SK Halle;15002;424;177.6
+SK Hamburg;02000;1661;89.9
+LK Hameln-Pyrmont;03252;97;65.3
+SK Hamm;05915;543;301.8
+Region Hannover;03241;1395;120.6
+LK Harburg;03353;180;70.7
+LK Harz;15085;465;218.0
+LK Haßberge;09674;162;192.0
+LK Havelland;12063;133;81.6
+LK Heidekreis;03358;119;84.6
+SK Heidelberg;08221;117;72.5
+LK Heidenheim;08135;310;233.5
+SK Heilbronn;08121;330;260.7
+LK Heilbronn;08125;757;219.8
+LK Heinsberg;05370;330;129.1
+LK Helmstedt;03154;57;62.4
+LK Herford;05758;436;174.0
+SK Herne;05916;362;231.4
+LK Hersfeld-Rotenburg;06632;258;213.7
+LK Herzogtum Lauenburg;01053;162;81.8
+LK Hildburghausen;16069;184;291.2
+LK Hildesheim;03254;246;89.2
+LK Hochsauerlandkreis;05958;473;182.1
+LK Hochtaunuskreis;06434;272;114.8
+SK Hof;09464;113;246.6
+LK Hof;09475;199;209.9
+LK Hohenlohekreis;08126;311;276.1
+LK Holzminden;03255;67;95.1
+LK Höxter;05762;108;77.0
+LK Ilm-Kreis;16070;314;295.5
+SK Ingolstadt;09161;263;191.4
+SK Jena;16053;154;138.3
+LK Jerichower Land;15086;97;108.3
+SK Kaiserslautern;07312;140;140.0
+LK Kaiserslautern;07335;161;151.9
+SK Karlsruhe;08212;465;149.0
+LK Karlsruhe;08215;681;153.0
+SK Kassel;06611;389;192.4
+LK Kassel;06633;330;139.4
+SK Kaufbeuren;09762;56;126.1
+LK Kelheim;09273;200;162.5
+SK Kempten;09763;117;169.2
+SK Kiel;01002;217;87.9
+LK Kitzingen;09675;94;103.1
+LK Kleve;05154;392;125.5
+SK Koblenz;07111;152;133.3
+SK Köln;05315;1977;181.7
+LK Konstanz;08335;435;151.9
+SK Krefeld;05114;430;189.1
+LK Kronach;09476;159;238.2
+LK Kulmbach;09477;95;132.7
+LK Kusel;07336;85;121.0
+LK Kyffhäuserkreis;16065;120;161.7
+LK Lahn-Dill-Kreis;06532;436;172.1
+SK Landau i.d.Pfalz;07313;64;136.5
+LK Landsberg a.Lech;09181;75;62.3
+SK Landshut;09261;115;156.7
+LK Landshut;09274;327;204.5
+LK Leer;03457;149;87.3
+SK Leipzig;14713;722;121.7
+LK Leipzig;14729;363;140.6
+SK Leverkusen;05316;365;222.9
+LK Lichtenfels;09478;156;233.6
+LK Limburg-Weilburg;06533;312;181.5
+LK Lindau;09776;59;72.0
+LK Lippe;05766;497;143.0
+LK Lörrach;08336;242;105.8
+SK Lübeck;01003;89;41.1
+LK Lüchow-Dannenberg;03354;50;103.3
+LK Ludwigsburg;08118;1016;186.3
+SK Ludwigshafen;07314;278;161.4
+LK Ludwigslust-Parchim;13076;423;199.7
+LK Lüneburg;03355;133;72.2
+SK Magdeburg;15003;255;107.3
+LK Main-Kinzig-Kreis;06435;687;163.4
+LK Main-Spessart;09677;119;94.3
+LK Main-Tauber-Kreis;08128;125;94.4
+LK Main-Taunus-Kreis;06436;316;132.5
+SK Mainz;07315;335;153.3
+LK Mainz-Bingen;07339;215;101.7
+SK Mannheim;08222;608;195.7
+LK Mansfeld-Südharz;15087;256;189.7
+LK Marburg-Biedenkopf;06534;353;142.9
+LK Märkischer Kreis;05962;808;197.0
+LK Märkisch-Oderland;12064;172;87.9
+LK Mayen-Koblenz;07137;300;139.9
 LK Mecklenburgische Seenplatte;13071;328;127.1
-LK Meißen;14627;447;184.9
-SK Memmingen;09764;106;240.4
-LK Merzig-Wadern;10042;124;120.1
-LK Mettmann;05158;953;196.3
-LK Miesbach;09182;160;160.0
-LK Miltenberg;09676;242;188.0
-LK Minden-Lübbecke;05770;466;150.1
-LK Mittelsachsen;14522;940;309.1
-SK Mönchengladbach;05116;369;141.4
-LK Mühldorf a.Inn;09183;287;247.7
-SK Mülheim a.d.Ruhr;05117;346;202.8
-SK München;09162;1899;127.9
-LK München;09184;464;132.4
-SK Münster;05515;287;91.0
-LK Neckar-Odenwald-Kreis;08225;246;171.3
-LK Neuburg-Schrobenhausen;09185;124;127.4
-LK Neumarkt i.d.OPf.;09373;266;197.7
-SK Neumünster;01004;58;72.3
-LK Neunkirchen;10043;215;163.6
-LK Neustadt a.d.Aisch-Bad Windsheim;09575;215;212.8
-LK Neustadt a.d.Waldnaab;09374;70;74.1
-SK Neustadt a.d.Weinstraße;07316;37;69.5
-LK Neu-Ulm;09775;370;211.2
-LK Neuwied;07138;288;157.5
-LK Nienburg (Weser);03256;119;98.0
-LK Nordfriesland;01054;77;46.4
-LK Nordhausen;16062;114;136.7
-LK Nordsachsen;14730;323;163.3
+LK Meißen;14627;404;167.1
+SK Memmingen;09764;115;260.8
+LK Merzig-Wadern;10042;115;111.4
+LK Mettmann;05158;856;176.3
+LK Miesbach;09182;150;150.0
+LK Miltenberg;09676;254;197.3
+LK Minden-Lübbecke;05770;449;144.6
+LK Mittelsachsen;14522;896;294.6
+SK Mönchengladbach;05116;401;153.6
+LK Mühldorf a.Inn;09183;256;220.9
+SK Mülheim a.d.Ruhr;05117;315;184.6
+SK München;09162;1838;123.8
+LK München;09184;473;135.0
+SK Münster;05515;280;88.8
+LK Neckar-Odenwald-Kreis;08225;250;174.1
+LK Neuburg-Schrobenhausen;09185;122;125.4
+LK Neumarkt i.d.OPf.;09373;306;227.4
+SK Neumünster;01004;57;71.1
+LK Neunkirchen;10043;224;170.5
+LK Neustadt a.d.Aisch-Bad Windsheim;09575;180;178.2
+LK Neustadt a.d.Waldnaab;09374;65;68.8
+SK Neustadt a.d.Weinstraße;07316;40;75.1
+LK Neu-Ulm;09775;344;196.3
+LK Neuwied;07138;231;126.4
+LK Nienburg (Weser);03256;123;101.3
+LK Nordfriesland;01054;72;43.4
+LK Nordhausen;16062;118;141.5
+LK Nordsachsen;14730;305;154.2
 LK Nordwestmecklenburg;13074;171;108.7
-LK Northeim;03155;136;102.8
-SK Nürnberg;09564;966;186.4
-LK Nürnberger Land;09574;204;119.4
-LK Oberallgäu;09780;199;127.6
-LK Oberbergischer Kreis;05374;570;209.5
-SK Oberhausen;05119;311;147.6
-LK Oberhavel;12065;187;87.8
-LK Oberspreewald-Lausitz;12066;159;145.4
-LK Odenwaldkreis;06437;140;144.8
-LK Oder-Spree;12067;209;116.9
-SK Offenbach;06413;343;263.3
-LK Offenbach;06438;523;147.0
-SK Oldenburg;03403;146;86.4
-LK Oldenburg;03458;117;89.4
-LK Olpe;05966;237;176.9
-LK Ortenaukreis;08317;522;121.1
-SK Osnabrück;03404;218;131.9
-LK Osnabrück;03459;420;117.3
-LK Ostalbkreis;08136;752;239.5
-LK Ostallgäu;09777;235;166.5
-LK Osterholz;03356;77;67.6
-LK Ostholstein;01055;138;68.8
-LK Ostprignitz-Ruppin;12068;82;82.9
-LK Paderborn;05774;428;139.0
-SK Passau;09262;45;85.2
-LK Passau;09275;271;140.7
-LK Peine;03157;191;141.7
-LK Pfaffenhofen a.d.Ilm;09186;161;125.6
-SK Pforzheim;08231;315;250.1
-LK Pinneberg;01056;274;86.7
-SK Pirmasens;07317;47;116.8
-LK Plön;01057;53;41.2
-SK Potsdam;12054;223;123.7
-LK Potsdam-Mittelmark;12069;202;93.3
-LK Prignitz;12070;80;105.0
-LK Rastatt;08216;378;163.3
-LK Ravensburg;08436;500;175.2
-LK Recklinghausen;05562;941;153.2
-LK Regen;09276;90;116.3
-SK Regensburg;09362;229;149.6
-LK Regensburg;09375;320;164.9
-SK Remscheid;05120;296;265.9
-LK Rems-Murr-Kreis;08119;955;223.5
-LK Rendsburg-Eckernförde;01058;132;48.2
-LK Reutlingen;08415;535;186.4
-LK Rhein-Erft-Kreis;05362;857;182.1
-LK Rheingau-Taunus-Kreis;06439;262;140.0
-LK Rhein-Hunsrück-Kreis;07140;110;106.6
-LK Rheinisch-Bergischer Kreis;05378;330;116.5
-LK Rhein-Kreis Neuss;05162;635;140.6
-LK Rhein-Lahn-Kreis;07141;115;94.0
-LK Rhein-Neckar-Kreis;08226;836;152.5
-LK Rhein-Pfalz-Kreis;07338;214;138.4
-LK Rhein-Sieg-Kreis;05382;752;125.2
-LK Rhön-Grabfeld;09673;122;153.2
-SK Rosenheim;09163;96;151.1
-LK Rosenheim;09187;271;103.7
-SK Rostock;13003;195;93.2
-LK Rostock;13072;202;93.6
-LK Rotenburg (Wümme);03357;171;104.4
-LK Roth;09576;174;137.3
-LK Rottal-Inn;09277;345;283.9
-LK Rottweil;08325;309;220.9
-LK Saale-Holzland-Kreis;16074;198;238.7
-LK Saalekreis;15088;416;226.3
-LK Saale-Orla-Kreis;16075;211;262.7
-LK Saalfeld-Rudolstadt;16073;297;287.8
-LK Saarlouis;10044;274;141.0
-LK Saarpfalz-Kreis;10045;167;117.4
-LK Sächsische Schweiz-Osterzgebirge;14628;511;208.1
-SK Salzgitter;03102;247;236.8
-LK Salzlandkreis;15089;345;182.4
-LK Sankt Wendel;10046;97;111.5
-LK Schaumburg;03257;187;118.5
-LK Schleswig-Flensburg;01059;63;31.3
-LK Schmalkalden-Meiningen;16066;236;188.9
-SK Schwabach;09565;41;100.0
-LK Schwäbisch Hall;08127;466;236.8
+LK Northeim;03155;140;105.8
+SK Nürnberg;09564;949;183.1
+LK Nürnberger Land;09574;189;110.7
+LK Oberallgäu;09780;183;117.3
+LK Oberbergischer Kreis;05374;627;230.5
+SK Oberhausen;05119;319;151.4
+LK Oberhavel;12065;190;89.2
+LK Oberspreewald-Lausitz;12066;178;162.7
+LK Odenwaldkreis;06437;134;138.6
+LK Oder-Spree;12067;208;116.3
+SK Offenbach;06413;339;260.2
+LK Offenbach;06438;500;140.5
+SK Oldenburg;03403;137;81.0
+LK Oldenburg;03458;138;105.4
+LK Olpe;05966;225;168.0
+LK Ortenaukreis;08317;629;146.0
+SK Osnabrück;03404;201;121.6
+LK Osnabrück;03459;398;111.1
+LK Ostalbkreis;08136;685;218.1
+LK Ostallgäu;09777;232;164.3
+LK Osterholz;03356;78;68.5
+LK Ostholstein;01055;120;59.8
+LK Ostprignitz-Ruppin;12068;72;72.8
+LK Paderborn;05774;396;128.6
+SK Passau;09262;39;73.9
+LK Passau;09275;246;127.7
+LK Peine;03157;184;136.5
+LK Pfaffenhofen a.d.Ilm;09186;155;120.9
+SK Pforzheim;08231;341;270.7
+LK Pinneberg;01056;265;83.8
+SK Pirmasens;07317;48;119.3
+LK Plön;01057;48;37.3
+SK Potsdam;12054;222;123.1
+LK Potsdam-Mittelmark;12069;199;91.9
+LK Prignitz;12070;81;106.4
+LK Rastatt;08216;376;162.5
+LK Ravensburg;08436;511;179.0
+LK Recklinghausen;05562;877;142.8
+LK Regen;09276;77;99.5
+SK Regensburg;09362;218;142.4
+LK Regensburg;09375;309;159.2
+SK Remscheid;05120;287;257.8
+LK Rems-Murr-Kreis;08119;884;206.9
+LK Rendsburg-Eckernförde;01058;128;46.7
+LK Reutlingen;08415;502;174.9
+LK Rhein-Erft-Kreis;05362;886;188.3
+LK Rheingau-Taunus-Kreis;06439;250;133.6
+LK Rhein-Hunsrück-Kreis;07140;114;110.5
+LK Rheinisch-Bergischer Kreis;05378;254;89.7
+LK Rhein-Kreis Neuss;05162;599;132.6
+LK Rhein-Lahn-Kreis;07141;118;96.5
+LK Rhein-Neckar-Kreis;08226;835;152.3
+LK Rhein-Pfalz-Kreis;07338;186;120.3
+LK Rhein-Sieg-Kreis;05382;676;112.5
+LK Rhön-Grabfeld;09673;109;136.9
+SK Rosenheim;09163;93;146.3
+LK Rosenheim;09187;272;104.1
+SK Rostock;13003;192;91.8
+LK Rostock;13072;177;82.0
+LK Rotenburg (Wümme);03357;169;103.2
+LK Roth;09576;165;130.2
+LK Rottal-Inn;09277;366;301.2
+LK Rottweil;08325;295;210.9
+LK Saale-Holzland-Kreis;16074;201;242.3
+LK Saalekreis;15088;388;211.1
+LK Saale-Orla-Kreis;16075;338;420.9
+LK Saalfeld-Rudolstadt;16073;300;290.7
+LK Saarlouis;10044;276;142.0
+LK Saarpfalz-Kreis;10045;139;97.8
+LK Sächsische Schweiz-Osterzgebirge;14628;499;203.2
+SK Salzgitter;03102;223;213.8
+LK Salzlandkreis;15089;307;162.3
+LK Sankt Wendel;10046;96;110.3
+LK Schaumburg;03257;192;121.7
+LK Schleswig-Flensburg;01059;54;26.8
+LK Schmalkalden-Meiningen;16066;268;214.5
+SK Schwabach;09565;39;95.2
+LK Schwäbisch Hall;08127;458;232.8
 LK Schwalm-Eder-Kreis;06634;229;127.5
-LK Schwandorf;09376;156;105.5
-LK Schwarzwald-Baar-Kreis;08326;542;255.1
-SK Schweinfurt;09662;124;232.1
-LK Schweinfurt;09678;204;176.7
-SK Schwerin;13004;122;127.5
-LK Segeberg;01060;151;54.5
+LK Schwandorf;09376;145;98.1
+LK Schwarzwald-Baar-Kreis;08326;581;273.4
+SK Schweinfurt;09662;147;275.1
+LK Schweinfurt;09678;227;196.6
+SK Schwerin;13004;127;132.8
+LK Segeberg;01060;143;51.6
 LK Siegen-Wittgenstein;05970;391;141.2
-LK Sigmaringen;08437;264;201.8
-LK Soest;05974;276;91.5
-SK Solingen;05122;245;153.9
-LK Sömmerda;16068;174;250.6
-LK Sonneberg;16072;167;289.3
-SK Speyer;07318;99;195.8
-LK Spree-Neiße;12071;187;164.4
-LK Stade;03359;189;92.4
-LK Stadtverband Saarbrücken;10041;551;167.6
-LK Starnberg;09188;105;76.8
-LK Steinburg;01061;98;74.8
-LK Steinfurt;05566;775;172.9
-LK Stendal;15090;206;185.3
-LK Stormarn;01062;226;92.6
-SK Straubing;09263;92;192.5
-LK Straubing-Bogen;09278;163;161.2
-SK Stuttgart;08111;1285;202.1
-LK Südliche Weinstraße;07337;171;154.7
-LK Südwestpfalz;07340;75;79.1
-SK Suhl;16054;99;269.1
-LK Teltow-Fläming;12072;174;102.4
-LK Tirschenreuth;09377;53;73.6
-LK Traunstein;09189;387;218.3
-SK Trier;07211;82;73.5
-LK Trier-Saarburg;07235;101;67.6
-LK Tübingen;08416;444;194.2
-LK Tuttlingen;08327;404;287.0
-LK Uckermark;12073;150;126.1
-LK Uelzen;03360;53;57.4
-SK Ulm;08421;329;259.5
-LK Unna;05978;807;204.4
-LK Unstrut-Hainich-Kreis;16064;127;124.2
-LK Unterallgäu;09778;319;219.5
-LK Vechta;03460;401;280.8
-LK Verden;03361;109;79.5
-LK Viersen;05166;386;129.2
-LK Vogelsbergkreis;06535;158;149.6
-LK Vogtlandkreis;14523;463;204.9
-LK Vorpommern-Greifswald;13075;323;137.1
-LK Vorpommern-Rügen;13073;204;90.8
-LK Vulkaneifel;07233;45;74.2
+LK Sigmaringen;08437;259;197.9
+LK Soest;05974;249;82.5
+SK Solingen;05122;264;165.8
+LK Sömmerda;16068;164;236.2
+LK Sonneberg;16072;158;273.7
+SK Speyer;07318;69;136.5
+LK Spree-Neiße;12071;178;156.5
+LK Stade;03359;164;80.2
+LK Stadtverband Saarbrücken;10041;545;165.8
+LK Starnberg;09188;89;65.1
+LK Steinburg;01061;88;67.2
+LK Steinfurt;05566;613;136.8
+LK Stendal;15090;188;169.1
+LK Stormarn;01062;233;95.4
+SK Straubing;09263;100;209.2
+LK Straubing-Bogen;09278;177;175.0
+SK Stuttgart;08111;1302;204.7
+LK Südliche Weinstraße;07337;181;163.8
+LK Südwestpfalz;07340;70;73.8
+SK Suhl;16054;109;296.3
+LK Teltow-Fläming;12072;148;87.1
+LK Tirschenreuth;09377;57;79.1
+LK Traunstein;09189;392;221.1
+SK Trier;07211;92;82.5
+LK Trier-Saarburg;07235;104;69.6
+LK Tübingen;08416;353;154.4
+LK Tuttlingen;08327;380;270.0
+LK Uckermark;12073;143;120.2
+LK Uelzen;03360;46;49.8
+SK Ulm;08421;327;257.9
+LK Unna;05978;748;189.4
+LK Unstrut-Hainich-Kreis;16064;133;130.1
+LK Unterallgäu;09778;310;213.3
+LK Vechta;03460;400;280.1
+LK Verden;03361;92;67.1
+LK Viersen;05166;364;121.8
+LK Vogelsbergkreis;06535;150;142.0
+LK Vogtlandkreis;14523;435;192.5
+LK Vorpommern-Greifswald;13075;314;133.3
+LK Vorpommern-Rügen;13073;210;93.5
+LK Vulkaneifel;07233;38;62.7
 LK Waldeck-Frankenberg;06635;191;122.1
-LK Waldshut;08337;225;131.6
-LK Warendorf;05570;397;142.9
-LK Wartburgkreis;16063;296;248.8
-SK Weiden i.d.OPf.;09363;33;77.2
-LK Weilheim-Schongau;09190;143;105.6
-SK Weimar;16055;88;134.9
-LK Weimarer Land;16071;170;206.9
-LK Weißenburg-Gunzenhausen;09577;127;134.1
-LK Werra-Meißner-Kreis;06636;161;160.0
-LK Wesel;05170;610;132.6
-LK Wesermarsch;03461;72;81.3
-LK Westerwaldkreis;07143;283;140.2
-LK Wetteraukreis;06440;330;107.0
-SK Wiesbaden;06414;493;177.0
-SK Wilhelmshaven;03405;55;72.3
-LK Wittenberg;15091;170;136.1
-LK Wittmund;03462;18;31.6
-LK Wolfenbüttel;03158;92;76.9
-SK Wolfsburg;03103;152;122.2
-SK Worms;07319;160;191.5
-LK Wunsiedel i.Fichtelgebirge;09479;94;129.4
-SK Wuppertal;05124;784;220.8
-SK Würzburg;09663;165;129.0
-LK Würzburg;09679;115;70.9
-LK Zollernalbkreis;08417;504;266.2
-SK Zweibrücken;07320;56;163.8
-LK Zwickau;14524;916;290.8
+LK Waldshut;08337;224;131.0
+LK Warendorf;05570;381;137.1
+LK Wartburgkreis;16063;273;229.5
+SK Weiden i.d.OPf.;09363;35;81.9
+LK Weilheim-Schongau;09190;187;138.0
+SK Weimar;16055;85;130.3
+LK Weimarer Land;16071;179;217.9
+LK Weißenburg-Gunzenhausen;09577;113;119.3
+LK Werra-Meißner-Kreis;06636;176;174.9
+LK Wesel;05170;591;128.5
+LK Wesermarsch;03461;68;76.8
+LK Westerwaldkreis;07143;234;115.9
+LK Wetteraukreis;06440;328;106.4
+SK Wiesbaden;06414;463;166.3
+SK Wilhelmshaven;03405;62;81.5
+LK Wittenberg;15091;158;126.4
+LK Wittmund;03462;21;36.9
+LK Wolfenbüttel;03158;96;80.3
+SK Wolfsburg;03103;162;130.3
+SK Worms;07319;147;176.0
+LK Wunsiedel i.Fichtelgebirge;09479;93;128.0
+SK Wuppertal;05124;769;216.6
+SK Würzburg;09663;163;127.4
+LK Würzburg;09679;121;74.6
+LK Zollernalbkreis;08417;481;254.0
+SK Zweibrücken;07320;50;146.2
+LK Zwickau;14524;859;272.7
+StadtRegion Aachen;05334;834;149.7
+LK Ahrweiler;07131;166;127.6
+LK Aichach-Friedberg;09771;166;123.3
+LK Alb-Donau-Kreis;08425;422;214.1
+LK Altenburger Land;16077;198;221.5
+LK Altenkirchen;07132;186;144.4
+LK Altmarkkreis Salzwedel;15081;111;133.5
+LK Altötting;09171;219;196.4
+LK Alzey-Worms;07331;159;122.6
+SK Amberg;09361;51;120.8
+LK Amberg-Sulzbach;09371;96;93.2
+LK Ammerland;03451;105;84.1
+LK Anhalt-Bitterfeld;15082;276;174.1
+SK Ansbach;09561;51;122.0
+LK Ansbach;09571;276;149.5
+SK Aschaffenburg;09661;144;202.8
+LK Aschaffenburg;09671;203;116.5
+SK Augsburg;09761;617;208.0
+LK Augsburg;09772;413;162.9
+LK Aurich;03452;93;49.0
+LK Bad Dürkheim;07332;127;95.7
+LK Bad Kissingen;09672;159;154.0
+LK Bad Kreuznach;07133;227;143.4
+LK Bad Tölz-Wolfratshausen;09173;211;165.0
+SK Baden-Baden;08211;77;139.5
+SK Bamberg;09461;68;87.9
+LK Bamberg;09471;222;150.9
+LK Barnim;12060;147;79.4
+LK Bautzen;14625;771;257.2
+SK Bayreuth;09462;81;108.3
+LK Bayreuth;09472;120;115.8
+LK Berchtesgadener Land;09172;142;134.1
+LK Bergstraße;06431;397;146.9
+SK Berlin Charlottenburg-Wilmersdorf;11004;424;126.8
+SK Berlin Friedrichshain-Kreuzberg;11002;348;123.4
+SK Berlin Lichtenberg;11011;378;131.9
+SK Berlin Marzahn-Hellersdorf;11010;338;128.5
+SK Berlin Mitte;11001;494;131.6
+SK Berlin Neukölln;11008;437;136.1
+SK Berlin Pankow;11003;228;57.3
+SK Berlin Reinickendorf;11012;400;154.0
+SK Berlin Spandau;11005;423;177.0
+SK Berlin Steglitz-Zehlendorf;11006;275;91.0
+SK Berlin Tempelhof-Schöneberg;11007;470;137.5
+SK Berlin Treptow-Köpenick;11009;225;84.4
+LK Bernkastel-Wittlich;07231;139;123.6
+LK Biberach;08426;464;230.5
+SK Bielefeld;05711;566;169.4
+LK Birkenfeld;07134;121;149.5
+LK Bitburg-Prüm;07232;130;131.2
+LK Böblingen;08115;633;161.1
+SK Bochum;05911;516;141.1
+LK Bodenseekreis;08435;373;171.5
+SK Bonn;05314;551;167.1
+LK Börde;15083;240;140.4
+LK Borken;05554;466;125.5
+SK Bottrop;05512;138;117.4
+SK Brandenburg a.d.Havel;12051;94;130.2
+SK Braunschweig;03101;254;101.8
+LK Breisgau-Hochschwarzwald;08315;139;52.7
+SK Bremen;04011;749;132.0
+SK Bremerhaven;04012;137;120.6
+LK Burgenlandkreis;15084;435;243.2
+LK Calw;08235;390;245.0
+LK Celle;03351;155;86.6
+LK Cham;09372;270;210.9
+SK Chemnitz;14511;705;286.2
+LK Cloppenburg;03453;217;127.1
+SK Coburg;09463;97;236.2
+LK Coburg;09473;209;240.9
+LK Cochem-Zell;07135;26;42.4
+LK Coesfeld;05558;177;80.2
+SK Cottbus;12052;148;148.5
+LK Cuxhaven;03352;118;59.6
+LK Dachau;09174;204;131.7
+LK Dahme-Spreewald;12061;170;99.5
+SK Darmstadt;06411;202;126.3
+LK Darmstadt-Dieburg;06432;316;106.1
+LK Deggendorf;09271;269;225.1
+SK Delmenhorst;03401;153;197.3
+SK Dessau-Roßlau;15001;107;133.6
+LK Diepholz;03251;252;116.1
+LK Dillingen a.d.Donau;09773;130;134.6
+LK Dingolfing-Landau;09279;251;259.6
+LK Dithmarschen;01051;68;51.1
+LK Donau-Ries;09779;249;186.1
+LK Donnersbergkreis;07333;140;185.9
+SK Dortmund;05913;1192;202.6
+SK Dresden;14612;728;130.8
+SK Duisburg;05112;888;178.1
+LK Düren;05358;526;198.8
+SK Düsseldorf;05111;942;151.5
+LK Ebersberg;09175;213;148.3
+LK Eichsfeld;16061;152;152.0
+LK Eichstätt;09176;154;115.9
+SK Eisenach;16056;65;153.8
+LK Elbe-Elster;12062;196;192.5
+SK Emden;03402;46;92.2
+LK Emmendingen;08316;140;84.1
+LK Emsland;03454;301;92.1
+LK Ennepe-Ruhr-Kreis;05954;439;135.4
+LK Enzkreis;08236;439;220.0
+LK Erding;09177;185;133.9
+SK Erfurt;16051;320;149.5
+SK Erlangen;09562;102;90.6
+LK Erlangen-Höchstadt;09572;176;128.2
+LK Erzgebirgskreis;14521;1127;336.5
+SK Essen;05113;947;162.5
+LK Esslingen;08116;1205;225.2
+LK Euskirchen;05366;270;139.4
+SK Flensburg;01001;41;45.5
+LK Forchheim;09474;122;105.0
+SK Frankenthal;07311;49;100.5
+SK Frankfurt (Oder);12053;88;152.4
+SK Frankfurt am Main;06412;1388;181.8
+SK Freiburg i.Breisgau;08311;200;86.5
+LK Freising;09178;259;143.9
+LK Freudenstadt;08237;239;202.1
+LK Freyung-Grafenau;09272;105;134.0
+LK Friesland;03455;32;32.4
+LK Fulda;06631;511;229.0
+LK Fürstenfeldbruck;09179;289;131.8
+SK Fürth;09563;333;259.2
+LK Fürth;09573;140;118.8
+LK Garmisch-Partenkirchen;09180;87;98.4
