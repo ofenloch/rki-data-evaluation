@@ -234,7 +234,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 		L498.9,190.0 L499.9,182.1 L500.8,174.5 L501.8,168.2 L502.7,163.0 L503.7,147.0 L504.6,134.9 L505.5,134.5
 		L506.5,134.8 L507.4,133.1 L508.4,135.5 L509.3,137.1 L510.3,132.8 L511.2,132.7 L512.2,130.4 L513.1,131.0
 		L514.1,131.5 L515.0,130.9 L516.0,129.1 L516.9,132.6 L517.9,139.0 L518.8,143.3 L519.8,149.2 L520.7,152.5
-		L521.7,156.2  '/></g>
+		L521.7,156.2 L522.6,160.8  '/></g>
 	</g>
 	<g id="array_1_plot_2" ><title>COVID-19 ICU Patients</title>
 <g fill="none" color="white" stroke="rgb(229,  30,  16)" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -298,7 +298,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 		L498.0,283.4 L498.9,283.0 L499.9,282.9 L500.8,282.4 L501.8,281.7 L502.7,281.4 L503.7,281.6 L504.6,281.5
 		L505.5,281.0 L506.5,280.6 L507.4,280.0 L508.4,279.2 L509.3,278.8 L510.3,278.6 L511.2,278.0 L512.2,278.0
 		L513.1,278.3 L514.1,278.0 L515.0,277.4 L516.0,277.9 L516.9,278.0 L517.9,278.2 L518.8,278.2 L519.8,278.4
-		L520.7,278.2 L521.7,278.3  '/></g>
+		L520.7,278.2 L521.7,278.4 L522.6,278.9  '/></g>
 	</g>
 	<g id="array_1_plot_3" ><title>Daily COVID-19 Deaths</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -361,7 +361,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 		L494.2,324.4 L495.1,324.5 L496.1,324.2 L497.0,322.2 L498.0,322.1 L498.9,322.2 L499.9,322.7 L500.8,324.0
 		L501.8,324.1 L502.7,322.3 L503.7,321.8 L504.6,322.3 L505.5,322.7 L506.5,323.0 L507.4,324.4 L508.4,324.1
 		L509.3,322.2 L510.3,321.9 L511.2,322.6 L512.2,322.5 L513.1,322.3 L514.1,323.9 L515.0,324.4 L516.0,321.8
-		L516.9,322.1 L517.9,322.5 L518.8,322.1 L519.8,322.8 L520.7,324.0 L521.7,324.2  '/></g>
+		L516.9,322.1 L517.9,322.5 L518.8,322.1 L519.8,322.8 L520.7,324.0 L521.7,324.2 L522.6,322.1  '/></g>
 	</g>
 	<g id="array_1_plot_4" ><title>Positive Tests (7 day avg)</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -455,11 +455,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 	<path stroke='rgb(230, 159,   0)'  d='M116.9,323.5 L123.5,320.0 L130.1,304.2 L136.8,277.0 L143.4,268.2 L150.0,280.9 L156.7,293.5 L163.3,304.1
 		L169.9,312.3 L176.6,314.9 L183.2,317.9 L189.9,320.2 L196.5,321.1 L203.1,322.1 L209.8,322.3 L216.4,322.0
 		L223.0,322.2 L229.7,322.6 L236.3,322.6 L242.9,322.0 L249.6,321.9 L256.2,321.4 L262.9,321.3 L269.5,320.9
-		L276.1,321.0 L282.8,321.6 L289.4,321.3 L296.0,320.7 L302.7,318.7 L309.3,317.8 L315.9,316.8 L322.6,310.2
-		L329.2,303.3 L335.8,286.7 L342.5,269.8 L349.1,261.2 L355.8,255.3 L362.4,250.2 L369.0,248.0 L375.7,240.2
-		L382.3,220.9 L388.9,209.4 L395.6,223.2 L402.2,224.3 L408.8,223.9 L415.5,235.8 L422.1,245.6 L428.8,257.6
-		L435.4,267.4 L442.0,278.8 L448.7,279.5 L455.3,282.9 L461.9,287.0 L468.6,282.9 L475.2,276.2 L481.8,268.4
-		L488.5,270.3 L495.1,268.4 L501.8,273.3 L508.4,287.6  '/>	<use xlink:href='#gpPt4' transform='translate(116.9,323.5) scale(3.75)' color='rgb(230, 159,   0)'/>
+		L276.1,321.0 L282.8,321.6 L289.4,321.3 L296.0,320.6 L302.7,318.7 L309.3,317.8 L315.9,316.8 L322.6,310.2
+		L329.2,303.3 L335.8,286.7 L342.5,269.8 L349.1,261.2 L355.8,255.2 L362.4,250.1 L369.0,248.0 L375.7,240.2
+		L382.3,220.9 L388.9,209.1 L395.6,223.1 L402.2,224.3 L408.8,223.6 L415.5,235.6 L422.1,245.5 L428.8,257.5
+		L435.4,267.3 L442.0,278.7 L448.7,279.3 L455.3,282.7 L461.9,286.8 L468.6,282.6 L475.2,275.7 L481.8,267.1
+		L488.5,268.5 L495.1,265.1 L501.8,265.5 L508.4,271.3 L515.0,290.9  '/>	<use xlink:href='#gpPt4' transform='translate(116.9,323.5) scale(3.75)' color='rgb(230, 159,   0)'/>
 	<use xlink:href='#gpPt4' transform='translate(123.5,320.0) scale(3.75)' color='rgb(230, 159,   0)'/>
 	<use xlink:href='#gpPt4' transform='translate(130.1,304.2) scale(3.75)' color='rgb(230, 159,   0)'/>
 	<use xlink:href='#gpPt4' transform='translate(136.8,277.0) scale(3.75)' color='rgb(230, 159,   0)'/>
@@ -486,7 +486,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 	<use xlink:href='#gpPt4' transform='translate(276.1,321.0) scale(3.75)' color='rgb(230, 159,   0)'/>
 	<use xlink:href='#gpPt4' transform='translate(282.8,321.6) scale(3.75)' color='rgb(230, 159,   0)'/>
 	<use xlink:href='#gpPt4' transform='translate(289.4,321.3) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(296.0,320.7) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(296.0,320.6) scale(3.75)' color='rgb(230, 159,   0)'/>
 	<use xlink:href='#gpPt4' transform='translate(302.7,318.7) scale(3.75)' color='rgb(230, 159,   0)'/>
 	<use xlink:href='#gpPt4' transform='translate(309.3,317.8) scale(3.75)' color='rgb(230, 159,   0)'/>
 	<use xlink:href='#gpPt4' transform='translate(315.9,316.8) scale(3.75)' color='rgb(230, 159,   0)'/>
@@ -495,30 +495,31 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 	<use xlink:href='#gpPt4' transform='translate(335.8,286.7) scale(3.75)' color='rgb(230, 159,   0)'/>
 	<use xlink:href='#gpPt4' transform='translate(342.5,269.8) scale(3.75)' color='rgb(230, 159,   0)'/>
 	<use xlink:href='#gpPt4' transform='translate(349.1,261.2) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(355.8,255.3) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(362.4,250.2) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(355.8,255.2) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(362.4,250.1) scale(3.75)' color='rgb(230, 159,   0)'/>
 	<use xlink:href='#gpPt4' transform='translate(369.0,248.0) scale(3.75)' color='rgb(230, 159,   0)'/>
 	<use xlink:href='#gpPt4' transform='translate(375.7,240.2) scale(3.75)' color='rgb(230, 159,   0)'/>
 	<use xlink:href='#gpPt4' transform='translate(382.3,220.9) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(388.9,209.4) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(395.6,223.2) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(388.9,209.1) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(395.6,223.1) scale(3.75)' color='rgb(230, 159,   0)'/>
 	<use xlink:href='#gpPt4' transform='translate(402.2,224.3) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(408.8,223.9) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(415.5,235.8) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(422.1,245.6) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(428.8,257.6) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(435.4,267.4) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(442.0,278.8) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(448.7,279.5) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(455.3,282.9) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(461.9,287.0) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(468.6,282.9) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(475.2,276.2) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(481.8,268.4) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(488.5,270.3) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(495.1,268.4) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(501.8,273.3) scale(3.75)' color='rgb(230, 159,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(508.4,287.6) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(408.8,223.6) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(415.5,235.6) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(422.1,245.5) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(428.8,257.5) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(435.4,267.3) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(442.0,278.7) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(448.7,279.3) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(455.3,282.7) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(461.9,286.8) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(468.6,282.6) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(475.2,275.7) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(481.8,267.1) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(488.5,268.5) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(495.1,265.1) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(501.8,265.5) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(508.4,271.3) scale(3.75)' color='rgb(230, 159,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(515.0,290.9) scale(3.75)' color='rgb(230, 159,   0)'/>
 	<g id="array_1_plot_5_keyentry" visibility="visible" onclick="gnuplot_svg.toggleVisibility(evt,'array_1_plot_5')">
 	<use xlink:href='#gpPt4' transform='translate(553.9,370.0) scale(3.75)' color='rgb(230, 159,   0)'/>
 	</g>
